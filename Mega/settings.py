@@ -10,8 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import dj_database_url
 import os
 from pathlib import Path
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -80,12 +82,18 @@ WSGI_APPLICATION = 'Mega.wsgi.application'
 
 DATABASES = {
     'default': {
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': 'smartkalyanamdb',
+        # 'USER': 'postgres',
+        # 'PASSWORD': '8080',
+        # 'HOST': 'localhost',
+        # 'PORT': '5433',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'smartkalyanamdb',
-        'USER': 'postgres',
-        'PASSWORD': '8080',
-        'HOST': 'localhost',
-        'PORT': '5433',
+        'NAME': 'd1up74n969uvdv',
+        'USER': 'padfrpgvlqgkhv',
+        'PASSWORD': 'd3f377612c1491bd47403828379234870a8b7d5e2258f082b1901393159c22d0',
+        'HOST': 'ec2-23-23-162-138.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
