@@ -1,0 +1,247 @@
+{% load static%}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>SMART KALYANAM</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{%static 'css/main.css'%}" />
+</head>
+
+<body>
+    <main>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark sticky-lg-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="{%static 'images/smartkalyanlogo.png'%}" alt="Logo" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'userhome' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'myprofile' %}">My Profile</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="dropdown01" href="#" data-bs-toggle="dropdown" aria-expanded="false">Search</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="{% url 'searchbasic' %}">Basic Search</a></li>
+                                <li><a class="dropdown-item" href="{% url 'searcheducation' %}">Educational Search</a></li>
+                                <li><a class="dropdown-item" href="{% url 'searchoccupation' %}">Occuapation Search</a></li>
+                                <li><a class="dropdown-item" href="{% url 'searchid' %}">Member ID Search</a></li>
+                                <li><a class="dropdown-item" href="{% url 'searchadvanced' %}">Advanced Search</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'mymatches' %}">My Matches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'shortlist' %}">Shortlisted Profile</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="dropdown02" href="#" data-bs-toggle="dropdown" aria-expanded="false">Manage Profile</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                                <li><a class="dropdown-item" href="{% url 'managephotos' %}">Manage Photos</a></li>
+                                <li><a class="dropdown-item" href="{% url 'expresseduser' %}">Express Interest</a></li>
+                                <li><a class="dropdown-item" href="{% url 'photoreqsent' %}">Photo Request</a></li>
+                                <li><a class="dropdown-item" href="{% url 'messagesuser' %}">Personalized Messages</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'packageuser' %}">Packages</a>
+                        </li>
+                    </ul>
+                    <div class="text-end">
+                        <a href="{% url 'messagesuser' %}" class="btn px-4"><i class="far fa-comment-alt text-white"></i></a>
+                        <a class="btn btn-sm btn-warning" href="{% url 'logout' %}"><i
+                                class="fas fa-sign-out-alt"></i>Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar Ends -->
+        <div class="row">
+
+            {% block content %} {% endblock %}
+
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark">
+        <div class="container py-5">
+            <div class="row py-3">
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">About</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <a href="#" class="nav-link text-muted">Contact Us</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="nav-link text-muted">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="nav-link text-muted">Stories</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Help</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="nav-link text-muted">Payments</a></li>
+                        <li class="mb-2">
+                            <a href="#" class="nav-link text-muted">Cancellation</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Policy</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <a href="#" class="nav-link text-muted">Return Policy</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="nav-link text-muted">Terms Of Use</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="nav-link text-muted">Security</a></li>
+                        <li class="mb-2"><a href="#" class="nav-link text-muted">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="nav-link text-muted">Login</a></li>
+                        <li class="mb-2"><a href="#" class="nav-link text-muted">Register</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">SMART KALYANAM</h6>
+                    <p class="text-muted mb-4">
+                        HiLite Business Park,<br />Calicut, India <br />+91 (9605) 440 757.
+                    </p>
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" title="twitter"><i class="fab fa-2x fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" title="facebook"><i class="fab fa-2x fa-facebook-f"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" title="instagram"><i class="fab fa-2x fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" title="pinterest"><i class="fab fa-2x fa-youtube"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" title="vimeo"><i class="fab fa-2x fa-google"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="p-0 m-0 b-0" />
+        <div class="bg-light py-2">
+            <div class="container text-center">
+                <p class="text-muted mb-0 py-2">
+                    © 2021 SMART KALYANAM. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Modal Message -->
+    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true" style="display: none; margin-top: 155px;">
+        <div class=" modal-dialog" style="width:auto !important;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="messageModalLabel">Send Message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <textarea class="form-control" rows="4" name="message" placeholder="Enter your message here.."></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Sent Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Message end -->
+    <!-- Modal Photo Request -->
+    <div class="modal fade" id="photoreqModal" tabindex="-1" aria-labelledby="photoreqModalLabel" aria-hidden="true" style="display: none; margin-top: 155px;">
+        <div class=" modal-dialog" style="width:auto !important;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="photoreqModalLabel">Send Photo Request</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fw-bolder">Are your sure want to sent photo request?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Yes</button>
+                    <button type="button" class="btn btn-danger">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Photo Request end -->
+    <!-- Modal Express Interes Request -->
+    <div class="modal fade" id="expressModal" tabindex="-1" aria-labelledby="expressModalLabel" aria-hidden="true" style="display: none; margin-top: 155px;">
+        <div class=" modal-dialog" style="width:auto !important;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expressModalLabel">Express Interest</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fw-bolder">Are your sure want to express interest?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Yes</button>
+                    <button type="button" class="btn btn-danger">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Photo Request end -->
+    <!-- Modal Request contact Request -->
+    <div class="modal fade" id="contactreqModal" tabindex="-1" aria-labelledby="contactreqModalLabel" aria-hidden="true" style="display: none; margin-top: 155px;">
+        <div class=" modal-dialog" style="width:auto !important;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactreqModalLabel">Contact Request</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fw-bolder text-success">YOUR REQUEST HAS BEEN SENT <br> OUR TEAM WILL CONTACT YOU SOON
+                        <br> PLEASE BE PATIENT
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Photo Request end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!--jquery Msg  -->
+    <script src="{%static 'javascript/msg.js'%}"></script>
+    <script src="{%static 'javascript/userforms.js'%}"></script>
+
+</body>
+
+</html>

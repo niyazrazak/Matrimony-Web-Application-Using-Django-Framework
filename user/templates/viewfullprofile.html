@@ -1,0 +1,335 @@
+{% extends 'user_dash.html' %}
+{% load static %}
+{% block content %}
+<!--  -->
+<div class="container-fluid px-5 py-5" id="userhome">
+    <div class="col-sm-12 col-md-9 col-lg-9 ms-5">
+
+        <div class="clearfix">
+            <h3 class="pb-2 border-bottom mt-0 text-danger">
+                Zoya-
+                <span class="fs-5 text-primary">GMR1239</span>
+            </h3>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="py-2 px-3 col-auto border">
+                    <div class="badge bg-danger text-wrap">Free Member</div>
+                    <br>
+                    <a target="_blank" href="#">
+                        <img class="img-fluid"
+                            src="https://media.istockphoto.com/photos/shes-beautiful-in-every-single-way-picture-id1209189181?k=20&m=1209189181&s=612x612&w=0&h=YPysng5cd_bqoww0n_yLuqSkbbvGCE5jm9Pp0GI0Oo0="
+                            alt="">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="dropdown">
+                    <button class="btn btn-primary form-control dropdown-toggle" id="dropdown04"
+                        data-bs-toggle="dropdown" aria-expanded="false">Profile Features</button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                        <li><a class="dropdown-item"><i class="fas fa-heart text-danger"></i> Shortlist Profile</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#messageModal"><i
+                                    class="fas fa-envelope"></i> Sent
+                                Message</a>
+                        </li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#photoreqModal"><i
+                                    class="fas fa-camera"></i> Photo
+                                Request</a>
+                        </li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#expressModal"><i
+                                    class="fas fa-heart"></i> Express
+                                interest</a></li>
+                    </ul>
+                </div>
+                <div class="py-2">
+                    <a class="btn btn-danger btn-sm form-control" data-bs-toggle="modal"
+                        data-bs-target="#contactreqModal"><i class="fas fa-address-card"></i>
+                        Request Contact Details</a>
+                </div>
+            </div>
+            <div class="col-sm-9 col-md-9 col-lg-9">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th>Profile Created For</th>
+                            <td>Self</td>
+                        </tr>
+                        <tr>
+                            <th>Gender, DOB &amp; Age </th>
+                            <td>
+                                Female,
+                                28-10-1993 ( 28 Years )
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Religion -
+                                Caste</th>
+                            <td>
+                                Hindu -
+                                Thiya </td>
+                        </tr>
+                        <tr>
+                            <th>Marital Status</th>
+                            <td> Seperated</td>
+                        </tr>
+
+                        <tr>
+                            <th>Mother Tongue</th>
+                            <td>Malayalam</td>
+                        </tr>
+                        <tr>
+                            <th>Country - State - City</th>
+                            <td>
+                                India -
+                                Kerala -
+                                Calicut </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <br>
+
+        <h4 class="fw-bolder border-bottom border-dark">Brief About Zoya</h4>
+        <p>
+            I am a person who is positive about every aspect of life. There are many
+            things I like to do, to see, and to experience. I like to read, I like
+            to write; I like to think, I like to dream; I like to talk, I like to
+            listen. I like to see the sunrise in the morning, I like to see the
+            moonlight at night; I like to feel the music flowing on my face, I like
+            to smell the wind coming from the ocean. I like to look at the clouds in
+            the sky with a blank mind, I like to do thought experiment when I cannot
+            sleep in the middle of the night. I like flowers in spring, rain in
+            summer, leaves in autumn, and snow in winter. I like to sleep early, I
+            like to get up late; I like to be alone, I like to be surrounded by
+            people. I like country’s peace, I like metropolis’ noise; I like the
+            beautiful west lake in Hangzhou, I like the flat cornfield in Champaign.
+            I like delicious food and comfortable shoes; I like good books and
+            romantic movies. I like the land and the nature, I like people. And, I
+            like to laugh.
+        </p>
+        <br />
+        <div class="clearfix"></div>
+        <!--  -->
+        <h4 class="fw-bolder border-bottom border-dark">Educational information</h4>
+        <div class="table-responsive">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <th>Quallification</th>
+                        <td>BA</td>
+                    </tr>
+                    <tr>
+                        <th>Occupation</th>
+                        <td>Acting Professional</td>
+                    </tr>
+                    <tr>
+                        <th>Languages Known</th>
+                        <td>Malayalam, English, Hindi</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4 class="fw-bolder border-bottom border-dark">Physical Information</h4>
+        <div class="table-responsive">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <th>Complexation &amp; Body Type</th>
+                        <td>Fair &amp; Athletic</td>
+                    </tr>
+                    <tr>
+                        <th>Height &amp; Weight</th>
+                        <td>
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <th class="text-start">Height</th>
+                                        <td class="text-start">6Ft 7in / 204.2 cm</td>
+                                        <th class="text-start">Weight</th>
+                                        <td class="text-start">63Kg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Diet &amp; Blood Group</th>
+                        <td>
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <th class="text-start">Diet</th>
+                                        <td class="text-start">Vegetarian</td>
+                                        <th class="text-start">Blood Gp</th>
+                                        <td class="text-start">O+ve</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Habitations</th>
+                        <td>
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <th class="text-start">Smoking</th>
+                                        <td class="text-start">No</td>
+                                        <th class="text-start">Drinking</th>
+                                        <td class="text-start">No</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Physical Impaired?</th>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <th>Dressing Style</th>
+                        <td>unformal</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4 class="fw-bolder border-bottom border-dark">Family Information</h4>
+        <div class="table-responsive">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <th>Mother Name &amp; Occuapation</th>
+                        <td>Mariya John (Housewife)</td>
+                    </tr>
+                    <tr>
+                        <th>Father Name &amp; Occuapation</th>
+                        <td>John Terry (Business)</td>
+                    </tr>
+                    <tr>
+                        <th>No.of Brothers &amp; Married</th>
+                        <td>No Brothers</td>
+                    </tr>
+                    <tr>
+                        <th>No.of Sisters &amp; Married</th>
+                        <td>No Sisters</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4 class="fw-bolder border-bottom border-dark">Family Background</h4>
+        <div class="table-responsive">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <th>Family Value, Status &amp; Type</th>
+                        <td>Moderate , Lower Middle Class , Nuclear Family</td>
+                    </tr>
+                    <tr>
+                        <th>Family Income</th>
+                        <td>Rs. 150001 - 175000</td>
+                    </tr>
+                    <tr>
+                        <th>Native</th>
+                        <td>Calicut</td>
+                    </tr>
+                    <tr>
+                        <th>Medical History</th>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4 class="fw-bolder border-bottom border-dark">Other Informations</h4>
+        <div class="table-responsive">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <th>Hobbies</th>
+                        <td>Bible Reading,</td>
+                    </tr>
+                    <tr>
+                        <th>Interests</th>
+                        <td>Party,Travel</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4 class="fw-bolder border-bottom border-dark">Partner Preferences</h4>
+        <div class="table-responsive">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <th>Looking For</th>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th>Age Between</th>
+                        <td>22 Years to 57 Years</td>
+                    </tr>
+
+                    <tr>
+                        <th>Country Living In</th>
+                        <td>India</td>
+                    </tr>
+
+                    <tr>
+                        <th>Religion &amp; Caste</th>
+                        <td>Christain &amp;</td>
+                    </tr>
+
+                    <tr>
+                        <th>Complexion</th>
+                        <td>
+                            Dark, Fair, Very Fair, Wheatish, Wheatish Brown, Wheatish
+                            Medium,
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Education</th>
+                        <td>
+                            High school, Less than high school, Post Graduate, 12th
+                            Intermediate, AAA, Doctoratea, Medical, Under Graduate,
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Occupation</th>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th>Mother Tongue</th>
+                        <td>Any</td>
+                    </tr>
+                    <tr>
+                        <th>Height Expectation</th>
+                        <td>From 5Ft 2in / 158.5 cm to 7Ft 1in / 216.4 cm</td>
+                    </tr>
+
+                    <tr>
+                        <th>Residential Status</th>
+                        <td>Permenant Resident</td>
+                    </tr>
+
+                    <tr>
+                        <th>Expectations in Brief</th>
+                        <td>well settled</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--  -->
+{% endblock %}

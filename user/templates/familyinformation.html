@@ -1,0 +1,168 @@
+{% extends 'user_dash.html' %} {% load static %} {% block content %}
+<!--  -->
+<div class="container px-5 py-2" id="basicinformation">
+    <h2 class="pb-2 border-bottom">FAMILY INFORMATIONS</h2>
+    <!--  -->
+    <div class="col-sm-12 col-md-9 col-lg-9">
+        <form action="{% url 'familyupdate' %}" method="POST">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_father_name">
+                        <label for="mem_father_name" class="form-control-plaintext"> Father Name </label>
+                        <input type="text" id="mem_father_name" name="mem_father_name" class="form-control" placeholder="Father Name" value="{{family.fatherName}}">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_fathers_occupation"><label for="mem_fathers_occupation" class="form-control-plaintext"> Fathers Occupation
+                        </label><input type="text" id="mem_fathers_occupation" name="mem_fathers_occupation" class="form-control" placeholder="Fathers Occupation" value="{{family.fatherOcuupation}}"></div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_mother_name"><label for="mem_mother_name" class="form-control-plaintext"> Mother Name </label>
+                        <input type="text" id="mem_mother_name" name="mem_mother_name" class="form-control" placeholder="Mother Name" value="{{family.motherName}}">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_mothers_occupation">
+                        <label for="mem_mothers_occupation" class="form-control-plaintext"> Mothers Occupation
+                        </label>
+                        <input type="text" id="mem_mothers_occupation" name="mem_mothers_occupation" class="form-control" placeholder="Mothers Occupation" value="{{family.motherOcuupation}}">
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-group">
+                        <div class="form-label mb-0">
+                            <label for="chk_no_brothers" class="form-control-plaintext clearfix">
+                                No of Brothers </label>
+                            <div class="align-items-center "><input class="form-check-input" type="checkbox" id="chk_no_brothers_1" value="1" name="no_brothers">
+                                <label class="chk_label" for="chk_no_brothers_1">
+                                    <span>No Brothers</span> </label>
+                            </div>
+                        </div>
+                        <div class="input-group" id="no_of_brothers">
+                            <div class="" app-field-wrapper="mem_no_of_brothers"><input type="number" id="mem_no_of_brothers" name="mem_no_of_brothers" class="form-control" min="0" max="10" step="1" placeholder="Brothers" value="{{family.noofBrothers}}"></div>
+                            <div class="input-group-text">Brothers</div>
+                            <div class="" app-field-wrapper="mem_no_of_brothers_married"><input type="number" id="mem_no_of_brothers_married" name="mem_no_of_brothers_married" class="form-control" min="0" max="10" step="1" placeholder="Married" value="{{family.noofBrothersMarried}}">
+                            </div>
+                            <div class="input-group-text">Married</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="">
+                        <div class="form-label mb-0"><label for="chk_no_sisters" class="form-control-plaintext clearfix">
+                                No of Sisters </label>
+                            <div class="align-items-center "><input class="form-check-input" type="checkbox" id="chk_no_sisters_1" value="1" name="no_sisters"> <label class="form-check-label" for="chk_no_sisters_1">
+                                    <span>No Sisters</span> </label>
+                            </div>
+                        </div>
+                        <div class="input-group" id="no_of_sisters">
+                            <div class="" app-field-wrapper="mem_no_of_sisters"><input type="number" id="mem_no_of_sisters" name="mem_no_of_sisters" class="form-control" min="0" max="10" step="1" placeholder="Sisters" value="{{family.noofSisters}}"></div>
+                            <div class="input-group-text">Sisters</div>
+                            <div class="" app-field-wrapper="mem_no_of_sisters_married"><input type="number" id="mem_no_of_sisters_married" name="mem_no_of_sisters_married" class="form-control" min="0" max="10" step="1" placeholder="Married" value="{{family.noofSistersMarried}}"></div>
+                            <div class="input-group-text">Married</div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="form-label" app-field-wrapper="mem_family_value"><label for="mem_family_value" class="form-control-plaintext"> Family Value </label><select id="mem_family_value" name="mem_family_value" class="form-select" placeholder="Family Value" data-width="100%" data-none-selected-text="Nothing selected"
+                            data-size="6" data-live-search="true" tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Family Value</option>
+                            <option value="Liberal">Liberal</option>
+                            <option value="Moderate">Moderate</option>
+                            <option value="Orthodox">Orthodox</option>
+                            <option value="Traditional">Traditional</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="form-label" app-field-wrapper="mem_family_status"><label for="mem_family_status" class="form-control-plaintext"> Family Status </label><select id="mem_family_status" name="mem_family_status" class="form-select" placeholder="Family Status" data-width="100%" data-none-selected-text="Nothing selected"
+                            data-size="6" data-live-search="true" tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Family Status</option>
+                            <option value="-">Do not want to tell at this time</option>
+                            <option value="Lower Middle Class">Lower Middle Class</option>
+                            <option value="Middle Class">Middle Class</option>
+                            <option value="Poor">Poor</option>
+                            <option value="Rich / Affluent">Rich / Affluent</option>
+                            <option value="Upper Middle Class">Upper Middle Class</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="form-label" app-field-wrapper="mem_family_type"><label for="mem_family_type" class="form-control-plaintext"> Family Type </label><select id="mem_family_type" name="mem_family_type" class="form-select" placeholder="Family Type" data-width="100%" data-none-selected-text="Nothing selected"
+                            data-size="6" data-live-search="true" tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Family Type</option>
+                            <option value="Joint Family">Joint Family</option>
+                            <option value="Nuclear Family">Nuclear Family</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_family_income"><label for="mem_family_income" class="form-control-plaintext"> Family Income </label><select id="mem_family_income" name="mem_family_income" class="form-select" placeholder="Family Income" data-width="100%"
+                            data-size="6" tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Family Income</option>
+                            <option value="Rs. 100001 - 125000">Rs. 100001 - 125000</option>
+                            <option value="Rs. 125001 - 150000">Rs. 125001 - 150000</option>
+                            <option value="Rs. 150001 - 175000">Rs. 150001 - 175000</option>
+                            <option value="Rs. 175001 - 200000">Rs. 175001 - 200000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_native"><label for="mem_native" class="form-control-plaintext"> Native Location </label><input type="text" id="mem_native" name="mem_native" class="form-control" placeholder="Native Location" value="{{family.nativeLocation}}"></div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_medical_history"><label for="mem_medical_history" class="form-control-plaintext"> Medical History </label><input type="text" id="mem_medical_history" name="mem_medical_history" class="form-control" placeholder="Medical History" value="{{family.medicalHistory}}"></div>
+                </div>
+            </div>
+
+            <div class="form-label row ">
+                <div class=" col-sm-12 col-md-6 col-lg-6">
+                    <div class="text-center">
+                        <h5>Family Informations</h5>
+                    </div>
+                    <div class="progress" style="margin-bottom: 0">
+                        <div class="
+                                    progress-bar progress-bar-striped
+                                    bg-success
+                                    progress-bar-animated
+                                    active
+                                  " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            100%
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-sm-12 col-md-6 col-lg-6">
+                    <div class="text-center">
+                        <i class="icon-history" style="color: #024884; font-size: 50px;"></i>
+                        <h5>Overall Profile Completion</h5>
+                    </div>
+                    <div class="progress" style="margin-bottom: 0">
+                        <div class="
+                                    progress-bar progress-bar-striped
+                                    bg-success
+                                    progress-bar-animated
+                                    active
+                                  " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                            85%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-label">
+                <div class="col-sm-6">
+                    <input type="submit" value="Update Family Informations" class="btn btn-success"> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="btn btn-secondary">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--  -->
+</div>
+<!--  -->
+{% endblock %}

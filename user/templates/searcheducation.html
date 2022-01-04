@@ -1,0 +1,172 @@
+{% extends 'user_dash.html' %}
+{% load static %}
+{% block content %}
+<!--  -->
+<div class="container px-5 py-5" id="homeadmin">
+    <h2 class="pb-2 border-bottom">EDUCATION SEARCH</h2>
+
+    <!--  -->
+    <div class="container align-items-center g-4">
+
+        <form action="#" id="profile_search" role="form" name="profile_search" method="post" accept-charset="utf-8">
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-label" app-field-wrapper="member_age_from">
+                            <label for="member_age_from" class="form-control-plaintext"> Age From </label>
+                            <select id="member_age_from" name="member_age_from" class="form-select"
+                                placeholder="Age From" data-width="100%" data-none-selected-text="Nothing selected"
+                                data-size="6" data-live-search="true" tabindex="-1" aria-hidden="true">
+                                <option value="">Choose Age From</option>
+                                <option ""="" value="18">18 Years</option>
+                                <option ""="" value="19">19 Years</option>
+                                <option ""="" value="20">20 Years</option>
+                                <option ""="" value="21">21 Years</option>
+                                <option ""="" value="22">22 Years</option>
+                                <option ""="" value="23">23 Years</option>
+                                <option ""="" value="24">24 Years</option>
+                                <option ""="" value="25">25 Years</option>
+                                <option ""="" value="26">26 Years</option>
+                                <option ""="" value="27">27 Years</option>
+                                <option ""="" value="28">28 Years</option>
+                                <option ""="" value="29">29 Years</option>
+                                <option ""="" value="30">30 Years</option>
+                                <option ""="" value="31">31 Years</option>
+                                <option ""="" value="32">32 Years</option>
+                                <option ""="" value="33">33 Years</option>
+                                <option ""="" value="34">34 Years</option>
+                                <option ""="" value="35">35 Years</option>
+                                <option ""="" value="36">36 Years</option>
+                                <option ""="" value="37">37 Years</option>
+                                <option ""="" value="38">38 Years</option>
+                                <option ""="" value="39">39 Years</option>
+                                <option ""="" value="40">40 Years</option>
+                                <option ""="" value="41">41 Years</option>
+                                <option ""="" value="42">42 Years</option>
+                                <option ""="" value="43">43 Years</option>
+                                <option ""="" value="44">44 Years</option>
+                                <option ""="" value="45">45 Years</option>
+                                <option ""="" value="46">46 Years</option>
+                                <option ""="" value="47">47 Years</option>
+                                <option ""="" value="48">48 Years</option>
+                                <option ""="" value="49">49 Years</option>
+                                <option ""="" value="50">50 Years</option>
+                                <option ""="" value="51">51 Years</option>
+                                <option ""="" value="52">52 Years</option>
+                                <option ""="" value="53">53 Years</option>
+                                <option ""="" value="54">54 Years</option>
+                                <option ""="" value="55">55 Years</option>
+                                <option ""="" value="56">56 Years</option>
+                                <option ""="" value="57">57 Years</option>
+                                <option ""="" value="58">58 Years</option>
+                                <option ""="" value="59">59 Years</option>
+                                <option ""="" value="60">60 Years</option>
+                                <option ""="" value="61">61 Years</option>
+                                <option ""="" value="62">62 Years</option>
+                                <option ""="" value="63">63 Years</option>
+                                <option ""="" value="64">64 Years</option>
+                                <option ""="" value="65">65 Years</option>
+                                <option ""="" value="66">66 Years</option>
+                                <option ""="" value="67">67 Years</option>
+                                <option ""="" value="68">68 Years</option>
+                                <option ""="" value="69">69 Years</option>
+                                <option ""="" value="70">70 Years</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-label" app-field-wrapper="member_age_to">
+                            <label for="member_age_to" class="form-control-plaintext"> Age To </label>
+                            <select id="member_age_to" name="member_age_to" class="form-select" placeholder="Age To"
+                                data-width="100%" data-none-selected-text="Nothing selected" data-size="6"
+                                data-live-search="true" tabindex="-1" aria-hidden="true">
+                                <option value="">Choose Age To</option>
+                                <option ""="" value="18">18 Years</option>
+                                <option ""="" value="19">19 Years</option>
+                                <option ""="" value="20">20 Years</option>
+                                <option ""="" value="21">21 Years</option>
+                                <option ""="" value="22">22 Years</option>
+                                <option ""="" value="23">23 Years</option>
+                                <option ""="" value="24">24 Years</option>
+                                <option ""="" value="25">25 Years</option>
+                                <option ""="" value="26">26 Years</option>
+                                <option ""="" value="27">27 Years</option>
+                                <option ""="" value="28">28 Years</option>
+                                <option ""="" value="29">29 Years</option>
+                                <option ""="" value="30">30 Years</option>
+                                <option ""="" value="31">31 Years</option>
+                                <option ""="" value="32">32 Years</option>
+                                <option ""="" value="33">33 Years</option>
+                                <option ""="" value="34">34 Years</option>
+                                <option ""="" value="35">35 Years</option>
+                                <option ""="" value="36">36 Years</option>
+                                <option ""="" value="37">37 Years</option>
+                                <option ""="" value="38">38 Years</option>
+                                <option ""="" value="39">39 Years</option>
+                                <option ""="" value="40">40 Years</option>
+                                <option ""="" value="41">41 Years</option>
+                                <option ""="" value="42">42 Years</option>
+                                <option ""="" value="43">43 Years</option>
+                                <option ""="" value="44">44 Years</option>
+                                <option ""="" value="45">45 Years</option>
+                                <option ""="" value="46">46 Years</option>
+                                <option ""="" value="47">47 Years</option>
+                                <option ""="" value="48">48 Years</option>
+                                <option ""="" value="49">49 Years</option>
+                                <option ""="" value="50">50 Years</option>
+                                <option ""="" value="51">51 Years</option>
+                                <option ""="" value="52">52 Years</option>
+                                <option ""="" value="53">53 Years</option>
+                                <option ""="" value="54">54 Years</option>
+                                <option ""="" value="55">55 Years</option>
+                                <option ""="" value="56">56 Years</option>
+                                <option ""="" value="57">57 Years</option>
+                                <option ""="" value="58">58 Years</option>
+                                <option ""="" value="59">59 Years</option>
+                                <option ""="" value="60">60 Years</option>
+                                <option ""="" value="61">61 Years</option>
+                                <option ""="" value="62">62 Years</option>
+                                <option ""="" value="63">63 Years</option>
+                                <option ""="" value="64">64 Years</option>
+                                <option ""="" value="65">65 Years</option>
+                                <option ""="" value="66">66 Years</option>
+                                <option ""="" value="67">67 Years</option>
+                                <option ""="" value="68">68 Years</option>
+                                <option ""="" value="69">69 Years</option>
+                                <option ""="" value="70">70 Years</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-label" app-field-wrapper="mem_education"><label for="mem_education"
+                        class="form-control-plaintext"> Education </label><select id="mem_education"
+                        name="mem_education" class="form-select" placeholder="Education" data-width="100%"
+                        data-none-selected-text="Nothing selected" data-size="6" data-live-search="true" tabindex="-1"
+                        aria-hidden="true">
+                        <option value="">Choose Education</option>
+                        <option ""="" value="92">High school</option>
+                        <option ""="" value="93">Less than high school</option>
+                        <option ""="" value="127">Post Graduate</option>
+                        <option ""="" value="615">12th Intermediate</option>
+                        <option ""="" value="128">Doctorate</option>
+                        <option ""="" value="827">Medical</option>
+                        <option ""="" value="126">Under Graduate</option>
+                    </select>
+                </div>
+                <div class="form-label">
+                    <a href="#" name="profile_search" class="btn btn-success">Search Now</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="education_reset" value="Clear" class="btn btn-secondary">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--  -->
+</div>
+
+<!--  -->
+
+{% endblock %}

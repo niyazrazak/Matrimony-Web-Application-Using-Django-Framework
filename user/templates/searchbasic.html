@@ -1,0 +1,809 @@
+{% extends 'user_dash.html' %}
+{% load static %}
+{% block content %}
+<!--  -->
+<div class="container px-5 py-5" id="searchbasic">
+    <h2 class="pb-2 border-bottom">BASIC SEARCH</h2>
+
+    <!--  -->
+    <div class="container align-items-center g-4">
+
+        <form action="#" id="profile_search" role="form" name="profile_search" method="post" accept-charset="utf-8">
+
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-label" app-field-wrapper="member_age_from">
+                            <label for="member_age_from" class="form-control-plaintext">
+                                Age From
+                            </label>
+                            <select id="member_age_from" name="member_age_from" class="form-select"
+                                placeholder="Age From" data-width="100%" data-none-selected-text="Nothing selected"
+                                data-size="6" data-live-search="true" tabindex="-1" aria-hidden="true">
+                                <option value="">Choose Age From</option>
+                                <option ""="" value="18">18 Years</option>
+                                <option ""="" value="19">19 Years</option>
+                                <option ""="" value="20">20 Years</option>
+                                <option ""="" value="21">21 Years</option>
+                                <option ""="" value="22">22 Years</option>
+                                <option ""="" value="23">23 Years</option>
+                                <option ""="" value="24">24 Years</option>
+                                <option ""="" value="25">25 Years</option>
+                                <option ""="" value="26">26 Years</option>
+                                <option ""="" value="27">27 Years</option>
+                                <option ""="" value="28">28 Years</option>
+                                <option ""="" value="29">29 Years</option>
+                                <option ""="" value="30">30 Years</option>
+                                <option ""="" value="31">31 Years</option>
+                                <option ""="" value="32">32 Years</option>
+                                <option ""="" value="33">33 Years</option>
+                                <option ""="" value="34">34 Years</option>
+                                <option ""="" value="35">35 Years</option>
+                                <option ""="" value="36">36 Years</option>
+                                <option ""="" value="37">37 Years</option>
+                                <option ""="" value="38">38 Years</option>
+                                <option ""="" value="39">39 Years</option>
+                                <option ""="" value="40">40 Years</option>
+                                <option ""="" value="41">41 Years</option>
+                                <option ""="" value="42">42 Years</option>
+                                <option ""="" value="43">43 Years</option>
+                                <option ""="" value="44">44 Years</option>
+                                <option ""="" value="45">45 Years</option>
+                                <option ""="" value="46">46 Years</option>
+                                <option ""="" value="47">47 Years</option>
+                                <option ""="" value="48">48 Years</option>
+                                <option ""="" value="49">49 Years</option>
+                                <option ""="" value="50">50 Years</option>
+                                <option ""="" value="51">51 Years</option>
+                                <option ""="" value="52">52 Years</option>
+                                <option ""="" value="53">53 Years</option>
+                                <option ""="" value="54">54 Years</option>
+                                <option ""="" value="55">55 Years</option>
+                                <option ""="" value="56">56 Years</option>
+                                <option ""="" value="57">57 Years</option>
+                                <option ""="" value="58">58 Years</option>
+                                <option ""="" value="59">59 Years</option>
+                                <option ""="" value="60">60 Years</option>
+                                <option ""="" value="61">61 Years</option>
+                                <option ""="" value="62">62 Years</option>
+                                <option ""="" value="63">63 Years</option>
+                                <option ""="" value="64">64 Years</option>
+                                <option ""="" value="65">65 Years</option>
+                                <option ""="" value="66">66 Years</option>
+                                <option ""="" value="67">67 Years</option>
+                                <option ""="" value="68">68 Years</option>
+                                <option ""="" value="69">69 Years</option>
+                                <option ""="" value="70">70 Years</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-label" app-field-wrapper="member_age_to">
+                            <label for="member_age_to" class="form-control-plaintext">
+                                Age To
+                            </label>
+                            <select id="member_age_to" name="member_age_to" class="form-select" placeholder="Age To"
+                                data-width="100%" data-none-selected-text="Nothing selected" data-size="6"
+                                data-live-search="true" tabindex="-1" aria-hidden="true">
+                                <option value="">Choose Age To</option>
+                                <option ""="" value="18">18 Years</option>
+                                <option ""="" value="19">19 Years</option>
+                                <option ""="" value="20">20 Years</option>
+                                <option ""="" value="21">21 Years</option>
+                                <option ""="" value="22">22 Years</option>
+                                <option ""="" value="23">23 Years</option>
+                                <option ""="" value="24">24 Years</option>
+                                <option ""="" value="25">25 Years</option>
+                                <option ""="" value="26">26 Years</option>
+                                <option ""="" value="27">27 Years</option>
+                                <option ""="" value="28">28 Years</option>
+                                <option ""="" value="29">29 Years</option>
+                                <option ""="" value="30">30 Years</option>
+                                <option ""="" value="31">31 Years</option>
+                                <option ""="" value="32">32 Years</option>
+                                <option ""="" value="33">33 Years</option>
+                                <option ""="" value="34">34 Years</option>
+                                <option ""="" value="35">35 Years</option>
+                                <option ""="" value="36">36 Years</option>
+                                <option ""="" value="37">37 Years</option>
+                                <option ""="" value="38">38 Years</option>
+                                <option ""="" value="39">39 Years</option>
+                                <option ""="" value="40">40 Years</option>
+                                <option ""="" value="41">41 Years</option>
+                                <option ""="" value="42">42 Years</option>
+                                <option ""="" value="43">43 Years</option>
+                                <option ""="" value="44">44 Years</option>
+                                <option ""="" value="45">45 Years</option>
+                                <option ""="" value="46">46 Years</option>
+                                <option ""="" value="47">47 Years</option>
+                                <option ""="" value="48">48 Years</option>
+                                <option ""="" value="49">49 Years</option>
+                                <option ""="" value="50">50 Years</option>
+                                <option ""="" value="51">51 Years</option>
+                                <option ""="" value="52">52 Years</option>
+                                <option ""="" value="53">53 Years</option>
+                                <option ""="" value="54">54 Years</option>
+                                <option ""="" value="55">55 Years</option>
+                                <option ""="" value="56">56 Years</option>
+                                <option ""="" value="57">57 Years</option>
+                                <option ""="" value="58">58 Years</option>
+                                <option ""="" value="59">59 Years</option>
+                                <option ""="" value="60">60 Years</option>
+                                <option ""="" value="61">61 Years</option>
+                                <option ""="" value="62">62 Years</option>
+                                <option ""="" value="63">63 Years</option>
+                                <option ""="" value="64">64 Years</option>
+                                <option ""="" value="65">65 Years</option>
+                                <option ""="" value="66">66 Years</option>
+                                <option ""="" value="67">67 Years</option>
+                                <option ""="" value="68">68 Years</option>
+                                <option ""="" value="69">69 Years</option>
+                                <option ""="" value="70">70 Years</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-label" app-field-wrapper="mem_religion">
+                    <label for="mem_religion" class="form-control-plaintext">
+                        Religion
+                    </label>
+                    <select id="mem_religion" name="mem_religion" class="form-select" placeholder="Religion" onchange=""
+                        data-width="100%" data-none-selected-text="Nothing selected" data-size="6"
+                        data-live-search="true" tabindex="-1" aria-hidden="true">
+                        <option value="">Choose Religion</option>
+                        <option ""="" value="1">Hindu</option>
+                        <option ""="" value="2">Muslim</option>
+                        <option ""="" value="3">Christian</option>
+                    </select>
+                </div>
+                <div id="show_caste">
+                    <div class="form-label">
+                        <label for="mem_caste" class="form-control-plaintext">
+                            Caste *</label>
+                        <select id="mem_caste" name="mem_caste" class="form-select" required="required"
+                            data-width="100%" data-none-selected-text="Nothing selected" data-size="6"
+                            data-live-search="true" tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Caste</option>
+                            <option ""="" value="939">152</option>
+                            <option ""="" value="315">24 Manai Telugu Chettiar</option>
+                            <option ""="" value="316">96 Kuli Maratha</option>
+                            <option ""="" value="317">Aaru Nattu Vellala</option>
+                            <option ""="" value="318">Achirapakkam Chettiar</option>
+                            <option ""="" value="319">Ad Dharmi</option>
+                            <option ""="" value="320">Adi Andhra</option>
+                            <option ""="" value="321">Adi Dravidar</option>
+                            <option ""="" value="322">Adi Karnataka</option>
+                            <option ""="" value="323">Agamudayar / Arcot / Thuluva Vellala</option>
+                            <option ""="" value="324">Agaram Vellan Chettiar</option>
+                            <option ""="" value="325">Agarwal</option>
+                            <option ""="" value="326">Agnikula Kshatriya</option>
+                            <option ""="" value="327">Agrahari</option>
+                            <option ""="" value="328">Agri</option>
+                            <option ""="" value="329">Ahir Shimpi</option>
+                            <option ""="" value="330">Ahirwar</option>
+                            <option ""="" value="331">Ahom</option>
+                            <option ""="" value="332">Ambalavasi</option>
+                            <option ""="" value="333">Anjana (Chowdary) Patel</option>
+                            <option ""="" value="334">Any</option>
+                            <option ""="" value="335">Aramari / Gabit</option>
+                            <option ""="" value="336">Arekatica</option>
+                            <option ""="" value="337">Arora</option>
+                            <option ""="" value="338">Arunthathiyar</option>
+                            <option ""="" value="339">Arya Vysya</option>
+                            <option ""="" value="340">Asathi</option>
+                            <option ""="" value="341">Ayira Vysya</option>
+                            <option ""="" value="342">Ayodhyavasi</option>
+                            <option ""="" value="343">Ayyaraka</option>
+                            <option ""="" value="344">Badaga</option>
+                            <option ""="" value="345">Bagdi</option>
+                            <option ""="" value="346">Baidya</option>
+                            <option ""="" value="347">Bairwa</option>
+                            <option ""="" value="348">Baishnab</option>
+                            <option ""="" value="349">Baishya</option>
+                            <option ""="" value="350">Bajantri</option>
+                            <option ""="" value="351">Balai</option>
+                            <option ""="" value="352">Balija</option>
+                            <option ""="" value="353">Balija Naidu</option>
+                            <option ""="" value="354">Balija Reddy</option>
+                            <option ""="" value="355">Banayat Oriya</option>
+                            <option ""="" value="356">Banik</option>
+                            <option ""="" value="357">Baniya</option>
+                            <option ""="" value="358">Baniya - Bania</option>
+                            <option ""="" value="359">Baniya - Kumuti</option>
+                            <option ""="" value="360">Banjara</option>
+                            <option ""="" value="361">Barai</option>
+                            <option ""="" value="362">Bari</option>
+                            <option ""="" value="363">Baria</option>
+                            <option ""="" value="364">Barnwal</option>
+                            <option ""="" value="365">Barujibi</option>
+                            <option ""="" value="366">Beri Chettiar</option>
+                            <option ""="" value="367">Besta</option>
+                            <option ""="" value="368">Bhandari</option>
+                            <option ""="" value="369">Bhatia</option>
+                            <option ""="" value="370">Bhatraju</option>
+                            <option ""="" value="371">Bhavasar Kshatriya</option>
+                            <option ""="" value="372">Bhoi</option>
+                            <option ""="" value="373">Bhovi</option>
+                            <option ""="" value="374">Bhoyar</option>
+                            <option ""="" value="375">Billava</option>
+                            <option ""="" value="376">Bishnoi/Vishnoi</option>
+                            <option ""="" value="377">Bondili</option>
+                            <option ""="" value="378">Boyar</option>
+                            <option ""="" value="379">Brahmbatt</option>
+                            <option ""="" value="380">Brahmin - All</option>
+                            <option ""="" value="381">Brahmin - Anavil</option>
+                            <option ""="" value="382">Brahmin - Anaviln Desai</option>
+                            <option ""="" value="383">Brahmin - Audichya</option>
+                            <option ""="" value="384">Brahmin - Baidhiki/Vaidhiki</option>
+                            <option ""="" value="385">Brahmin - Bardai</option>
+                            <option ""="" value="386">Brahmin - Barendra</option>
+                            <option ""="" value="387">Brahmin - Bhargav</option>
+                            <option ""="" value="388">Brahmin - Bhatt</option>
+                            <option ""="" value="389">Brahmin - Bhumihar</option>
+                            <option ""="" value="390">Brahmin - Dadhich</option>
+                            <option ""="" value="391">Brahmin - Daivadnya</option>
+                            <option ""="" value="392">Brahmin - Danua</option>
+                            <option ""="" value="393">Brahmin - Deshastha</option>
+                            <option ""="" value="394">Brahmin - Dhiman</option>
+                            <option ""="" value="395">Brahmin - Dravida</option>
+                            <option ""="" value="396">Brahmin - Embrandiri</option>
+                            <option ""="" value="397">Brahmin - Garhwali</option>
+                            <option ""="" value="398">Brahmin - Gaur</option>
+                            <option ""="" value="399">Brahmin - Goswami/Gosavi</option>
+                            <option ""="" value="400">Brahmin - Gujar Gaur</option>
+                            <option ""="" value="401">Brahmin - Gurukkal</option>
+                            <option ""="" value="402">Brahmin - Halua</option>
+                            <option ""="" value="403">Brahmin - Havyaka</option>
+                            <option ""="" value="404">Brahmin - Hoysala</option>
+                            <option ""="" value="405">Brahmin - Iyengar</option>
+                            <option ""="" value="406">Brahmin - Iyer</option>
+                            <option ""="" value="407">Brahmin - Jangid</option>
+                            <option ""="" value="408">Brahmin - Jhadua</option>
+                            <option ""="" value="409">Brahmin - Jyotish</option>
+                            <option ""="" value="410">Brahmin - Kanyakubj</option>
+                            <option ""="" value="411">Brahmin - Karhade</option>
+                            <option ""="" value="412">Brahmin - Khadayata</option>
+                            <option ""="" value="413">Brahmin - Khandelwal</option>
+                            <option ""="" value="414">Brahmin - Khedaval</option>
+                            <option ""="" value="415">Brahmin - Kokanastha</option>
+                            <option ""="" value="416">Brahmin - Kota</option>
+                            <option ""="" value="417">Brahmin - Koteshwara / Kota (Madhwa )</option>
+                            <option ""="" value="418">Brahmin - Kulin</option>
+                            <option ""="" value="419">Brahmin - Kumaoni</option>
+                            <option ""="" value="420">Brahmin - Madhwa</option>
+                            <option ""="" value="421">Brahmin - Maithil</option>
+                            <option ""="" value="422">Brahmin - Mevada</option>
+                            <option ""="" value="423">Brahmin - Modh</option>
+                            <option ""="" value="424">Brahmin - Mohyal</option>
+                            <option ""="" value="425">Brahmin - Nagar</option>
+                            <option ""="" value="426">Brahmin - Namboodiri</option>
+                            <option ""="" value="427">Brahmin - Narmadiya&nbsp;</option>
+                            <option ""="" value="428">Brahmin - Niyogi</option>
+                            <option ""="" value="429">Brahmin - Others</option>
+                            <option ""="" value="430">Brahmin - Paliwal</option>
+                            <option ""="" value="431">Brahmin - Panda</option>
+                            <option ""="" value="432">Brahmin - Pandit</option>
+                            <option ""="" value="433">Brahmin - Panicker</option>
+                            <option ""="" value="434">Brahmin - Pareek</option>
+                            <option ""="" value="435">Brahmin - Pushkarna</option>
+                            <option ""="" value="436">Brahmin - Rajgor</option>
+                            <option ""="" value="437">Brahmin - Rarhi</option>
+                            <option ""="" value="438">Brahmin - Rarhi/Radhi</option>
+                            <option ""="" value="439">Brahmin - Rigvedi</option>
+                            <option ""="" value="440">Brahmin - Rudraj</option>
+                            <option ""="" value="441">Brahmin - Sakaldwipi</option>
+                            <option ""="" value="442">Brahmin - Sanadya</option>
+                            <option ""="" value="443">Brahmin - Sanketi</option>
+                            <option ""="" value="444">Brahmin - Saraswat</option>
+                            <option ""="" value="445">Brahmin - Sarua</option>
+                            <option ""="" value="446">Brahmin - Saryuparin</option>
+                            <option ""="" value="447">Brahmin - Shivalli (Madhva)</option>
+                            <option ""="" value="448">Brahmin - Shivhalli</option>
+                            <option ""="" value="449">Brahmin - Shri Gaud</option>
+                            <option ""="" value="450">Brahmin - Shri Mali</option>
+                            <option ""="" value="451">Brahmin - Shrimali</option>
+                            <option ""="" value="452">Brahmin - Shukla Yajurvedi</option>
+                            <option ""="" value="453">Brahmin - Sikhwal</option>
+                            <option ""="" value="454">Brahmin - Smartha</option>
+                            <option ""="" value="455">Brahmin - Sri Vaishnava</option>
+                            <option ""="" value="456">Brahmin - Stanika</option>
+                            <option ""="" value="457">Brahmin - Tapodhan</option>
+                            <option ""="" value="458">Brahmin - Tyagi</option>
+                            <option ""="" value="459">Brahmin - Vaidiki</option>
+                            <option ""="" value="460">Brahmin - Vaikhanasa</option>
+                            <option ""="" value="461">Brahmin - Valam</option>
+                            <option ""="" value="462">Brahmin - Velanadu</option>
+                            <option ""="" value="463">Brahmin - Vyas</option>
+                            <option ""="" value="464">Brahmin - Zalora</option>
+                            <option ""="" value="465">Brajastha Maithil</option>
+                            <option ""="" value="466">Brajastha Maithil</option>
+                            <option ""="" value="467">Bunt (Shetty)</option>
+                            <option ""="" value="935">Caste No Bar</option>
+                            <option ""="" value="469">Chalawadi and Holeya</option>
+                            <option ""="" value="470">Chambhar</option>
+                            <option ""="" value="471">Chandravanshi Kahar</option>
+                            <option ""="" value="472">Chasa</option>
+                            <option ""="" value="473">Chattada Sri Vaishnava&nbsp;</option>
+                            <option ""="" value="474">Chaturth</option>
+                            <option ""="" value="475">Chaudary</option>
+                            <option ""="" value="476">Chaurasia</option>
+                            <option ""="" value="477">Chennadasar</option>
+                            <option ""="" value="478">Cherakula Vellalar</option>
+                            <option ""="" value="479">Chettiar</option>
+                            <option ""="" value="480">Chhetri</option>
+                            <option ""="" value="481">Chippolu (Mera)</option>
+                            <option ""="" value="482">Choudhary</option>
+                            <option ""="" value="468">CKP</option>
+                            <option ""="" value="483">Coorgi</option>
+                            <option ""="" value="484">Deshmukh</option>
+                            <option ""="" value="485">Desikar</option>
+                            <option ""="" value="486">Desikar Thanjavur</option>
+                            <option ""="" value="487">Devadiga</option>
+                            <option ""="" value="488">Devandra Kula Vellalar</option>
+                            <option ""="" value="489">Devang Koshthi</option>
+                            <option ""="" value="490">Devanga</option>
+                            <option ""="" value="491">Devanga Chettiar</option>
+                            <option ""="" value="492">Devar/Thevar/Mukkulathor</option>
+                            <option ""="" value="493">Devrukhe Brahmin</option>
+                            <option ""="" value="494">Dhanak</option>
+                            <option ""="" value="495">Dhangar</option>
+                            <option ""="" value="496">Dheevara</option>
+                            <option ""="" value="497">Dhiman</option>
+                            <option ""="" value="498">Dhoba</option>
+                            <option ""="" value="499">Dhobi</option>
+                            <option ""="" value="500">Dhor / Kakkayya</option>
+                            <option ""="" value="501">Dommala</option>
+                            <option ""="" value="502">Dosar / Dusra</option>
+                            <option ""="" value="936">dsfgsd</option>
+                            <option ""="" value="503">Dumal</option>
+                            <option ""="" value="504">Dusadh (Paswan)</option>
+                            <option ""="" value="505">Ediga</option>
+                            <option ""="" value="506">Ediga /Goud (Balija)</option>
+                            <option ""="" value="507">Elur Chetty</option>
+                            <option ""="" value="508">Ezhava</option>
+                            <option ""="" value="509">Ezhava Panicker</option>
+                            <option ""="" value="510">Ezhava Thandan</option>
+                            <option ""="" value="511">Ezhuthachan</option>
+                            <option ""="" value="512">Gabit</option>
+                            <option ""="" value="513">Gahoi</option>
+                            <option ""="" value="514">Gajula / Kavarai</option>
+                            <option ""="" value="515">Ganda</option>
+                            <option ""="" value="516">Gandha Vanika</option>
+                            <option ""="" value="517">Gandla</option>
+                            <option ""="" value="518">Gandla / Ganiga</option>
+                            <option ""="" value="519">Ganiga</option>
+                            <option ""="" value="520">Garhwali</option>
+                            <option ""="" value="521">Gatti</option>
+                            <option ""="" value="522">Gavara</option>
+                            <option ""="" value="523">Gawali</option>
+                            <option ""="" value="524">Ghisadi</option>
+                            <option ""="" value="525">Ghumar</option>
+                            <option ""="" value="526">Goala</option>
+                            <option ""="" value="527">Goan</option>
+                            <option ""="" value="528">Gomantak</option>
+                            <option ""="" value="529">Gondhali</option>
+                            <option ""="" value="530">Goud</option>
+                            <option ""="" value="531">Gounder</option>
+                            <option ""="" value="532">Gounder - Kongu Vellala Gounder</option>
+                            <option ""="" value="533">Gounder - Nattu Gounder</option>
+                            <option ""="" value="534">Gounder - Others</option>
+                            <option ""="" value="535">Gounder - Urali Gounder</option>
+                            <option ""="" value="536">Gounder - Vanniya Kula Kshatriyar</option>
+                            <option ""="" value="537">Gounder - Vettuva Gounder</option>
+                            <option ""="" value="538">Gowda</option>
+                            <option ""="" value="539">Gowda - Kuruba Gowda</option>
+                            <option ""="" value="540">Gramani</option>
+                            <option ""="" value="541">Gudia</option>
+                            <option ""="" value="542">Gujjar</option>
+                            <option ""="" value="543">Gulahre</option>
+                            <option ""="" value="544">Gupta</option>
+                            <option ""="" value="545">Guptan</option>
+                            <option ""="" value="546">Gurav</option>
+                            <option ""="" value="547">Gurjar</option>
+                            <option ""="" value="548">Haihaivanshi</option>
+                            <option ""="" value="549">Halba Koshti</option>
+                            <option ""="" value="550">Helava</option>
+                            <option ""="" value="551">Hugar (Jeer)</option>
+                            <option ""="" value="552">Illaththu Pillai</option>
+                            <option ""="" value="553">Intercaste</option>
+                            <option ""="" value="554">Irani</option>
+                            <option ""="" value="555">Isai Vellalar</option>
+                            <option ""="" value="556">Jaalari</option>
+                            <option ""="" value="557">Jaiswal</option>
+                            <option ""="" value="558">Jandra</option>
+                            <option ""="" value="559">Jangam</option>
+                            <option ""="" value="560">Jangra - Brahmin</option>
+                            <option ""="" value="561">Jat</option>
+                            <option ""="" value="562">Jatav</option>
+                            <option ""="" value="563">Jetty/Malla</option>
+                            <option ""="" value="564">Jhadav</option>
+                            <option ""="" value="565">Jijhotia Brahmin</option>
+                            <option ""="" value="566">Jogi (Nath)</option>
+                            <option ""="" value="567">Julaha</option>
+                            <option ""="" value="568">Kachara</option>
+                            <option ""="" value="569">Kadava Patel</option>
+                            <option ""="" value="570">Kahar</option>
+                            <option ""="" value="571">Kaibarta</option>
+                            <option ""="" value="572">Kaikaala</option>
+                            <option ""="" value="573">Kalal</option>
+                            <option ""="" value="574">Kalanji</option>
+                            <option ""="" value="575">Kalar</option>
+                            <option ""="" value="576">Kalinga</option>
+                            <option ""="" value="577">Kalinga Vysya</option>
+                            <option ""="" value="578">Kalita</option>
+                            <option ""="" value="579">Kalwar</option>
+                            <option ""="" value="580">Kamboj</option>
+                            <option ""="" value="581">Kamma</option>
+                            <option ""="" value="582">Kamma Naidu</option>
+                            <option ""="" value="583">Kanakkan Padanna</option>
+                            <option ""="" value="584">Kandara</option>
+                            <option ""="" value="585">Kansari</option>
+                            <option ""="" value="586">Kanykubj Bania</option>
+                            <option ""="" value="587">Kapu</option>
+                            <option ""="" value="588">Kapu Naidu</option>
+                            <option ""="" value="589">Kapu Reddy</option>
+                            <option ""="" value="590">Karakala Bhakthula</option>
+                            <option ""="" value="591">Karana</option>
+                            <option ""="" value="592">Karkathar</option>
+                            <option ""="" value="593">Karmakar</option>
+                            <option ""="" value="594">Karni Bhakthula</option>
+                            <option ""="" value="595">Karuneegar</option>
+                            <option ""="" value="596">Kasar</option>
+                            <option ""="" value="597">Kasaundhan</option>
+                            <option ""="" value="598">Kashyap</option>
+                            <option ""="" value="599">Kasukara</option>
+                            <option ""="" value="600">Katiya</option>
+                            <option ""="" value="601">Kavara</option>
+                            <option ""="" value="602">Kavuthiyya/Ezhavathy</option>
+                            <option ""="" value="603">Kayastha</option>
+                            <option ""="" value="604">Kayastha (Bengali)</option>
+                            <option ""="" value="605">Kerala Mudali</option>
+                            <option ""="" value="606">Keshri (Kesarwani)</option>
+                            <option ""="" value="607">Khandayat</option>
+                            <option ""="" value="608">Khandelwal</option>
+                            <option ""="" value="609">Kharwa</option>
+                            <option ""="" value="610">Kharwar</option>
+                            <option ""="" value="611">Khatik</option>
+                            <option ""="" value="612">Khatri</option>
+                            <option ""="" value="613">Kirar</option>
+                            <option ""="" value="614">Kodikal Pillai</option>
+                            <option ""="" value="615">Kokanastha Maratha</option>
+                            <option ""="" value="616">Koli</option>
+                            <option ""="" value="617">Koli Mahadev</option>
+                            <option ""="" value="618">Koli Patel</option>
+                            <option ""="" value="619">Komti /Arya Vaishya</option>
+                            <option ""="" value="620">Kongu Chettiar</option>
+                            <option ""="" value="621">Kongu Nadar</option>
+                            <option ""="" value="622">Kongu Vellala Gounder</option>
+                            <option ""="" value="623">Konkani</option>
+                            <option ""="" value="624">Korama</option>
+                            <option ""="" value="625">Kori</option>
+                            <option ""="" value="626">Kori/Koli</option>
+                            <option ""="" value="627">Kosthi</option>
+                            <option ""="" value="628">Krishnavaka</option>
+                            <option ""="" value="629">Kshatriya</option>
+                            <option ""="" value="630">Kshatriya Kurmi</option>
+                            <option ""="" value="631">Kshatriya Raju</option>
+                            <option ""="" value="632">Kudumbi</option>
+                            <option ""="" value="633">Kulal</option>
+                            <option ""="" value="634">Kulalar</option>
+                            <option ""="" value="635">Kulita</option>
+                            <option ""="" value="938">kullalar</option>
+                            <option ""="" value="636">Kumaoni Rajput</option>
+                            <option ""="" value="637">Kumawat</option>
+                            <option ""="" value="638">Kumbhakar</option>
+                            <option ""="" value="639">Kumbhar</option>
+                            <option ""="" value="640">Kumhar</option>
+                            <option ""="" value="641">Kummari</option>
+                            <option ""="" value="642">Kunbi</option>
+                            <option ""="" value="643">Kunbi Lonari</option>
+                            <option ""="" value="644">Kunbi Maratha</option>
+                            <option ""="" value="645">Kunbi Tirale</option>
+                            <option ""="" value="646">Kuravan</option>
+                            <option ""="" value="647">Kurmi</option>
+                            <option ""="" value="648">Kurmi/Kurmi Kshatriya</option>
+                            <option ""="" value="649">Kurni</option>
+                            <option ""="" value="650">Kuruba</option>
+                            <option ""="" value="651">Kuruhina Shetty</option>
+                            <option ""="" value="652">Kuruhini Chetty</option>
+                            <option ""="" value="653">Kurumbar</option>
+                            <option ""="" value="654">Kuruva</option>
+                            <option ""="" value="655">Kushwaha (Koiri)</option>
+                            <option ""="" value="656">Kutchi</option>
+                            <option ""="" value="657">Lad</option>
+                            <option ""="" value="658">Lambadi</option>
+                            <option ""="" value="659">Leva patel</option>
+                            <option ""="" value="660">Leva patil</option>
+                            <option ""="" value="661">Linga Balija</option>
+                            <option ""="" value="662">Lingayath</option>
+                            <option ""="" value="663">Lodhi Rajput</option>
+                            <option ""="" value="664">Lohana</option>
+                            <option ""="" value="665">Lohar</option>
+                            <option ""="" value="666">Loniya</option>
+                            <option ""="" value="667">Lubana</option>
+                            <option ""="" value="668">Madhesiya/Kanu/Halwai</option>
+                            <option ""="" value="669">Madiga</option>
+                            <option ""="" value="670">Mahajan</option>
+                            <option ""="" value="671">Mahar</option>
+                            <option ""="" value="672">Mahendra</option>
+                            <option ""="" value="673">Maheshwari</option>
+                            <option ""="" value="674">Maheshwari / Meshri</option>
+                            <option ""="" value="675">Mahishya</option>
+                            <option ""="" value="676">Mahor</option>
+                            <option ""="" value="677">Mahuri</option>
+                            <option ""="" value="678">Mair Rajput Swarnkar</option>
+                            <option ""="" value="679">Majabi</option>
+                            <option ""="" value="680">Mala</option>
+                            <option ""="" value="681">Mali</option>
+                            <option ""="" value="682">Mallah</option>
+                            <option ""="" value="683">Malviya Brahmin</option>
+                            <option ""="" value="684">Malwani</option>
+                            <option ""="" value="685">Mangalorean</option>
+                            <option ""="" value="686">Manipuri</option>
+                            <option ""="" value="687">Manjapudur Chettiar</option>
+                            <option ""="" value="688">Mannan / Velan / Vannan</option>
+                            <option ""="" value="689">Mapila</option>
+                            <option ""="" value="690">Maratha</option>
+                            <option ""="" value="691">Maratha Kshatriya</option>
+                            <option ""="" value="692">Maruthuvar</option>
+                            <option ""="" value="693">Matang</option>
+                            <option ""="" value="694">Mathur</option>
+                            <option ""="" value="695">Mathur Vaishya</option>
+                            <option ""="" value="696">Maurya / Shakya</option>
+                            <option ""="" value="697">Meena</option>
+                            <option ""="" value="698">Meenavar</option>
+                            <option ""="" value="699">Meghwal</option>
+                            <option ""="" value="700">Mehra</option>
+                            <option ""="" value="701">Meru Darji</option>
+                            <option ""="" value="702">Mochi</option>
+                            <option ""="" value="703">Modak</option>
+                            <option ""="" value="704">Modi</option>
+                            <option ""="" value="705">Modikarlu</option>
+                            <option ""="" value="706">Mogaveera</option>
+                            <option ""="" value="707">Mudaliyar</option>
+                            <option ""="" value="708">Mudiraj</option>
+                            <option ""="" value="709">Munnuru Kapu</option>
+                            <option ""="" value="710">Musukama</option>
+                            <option ""="" value="711">Muthuraja</option>
+                            <option ""="" value="712">Naagavamsam</option>
+                            <option ""="" value="713">Nabit</option>
+                            <option ""="" value="714">Nadars</option>
+                            <option ""="" value="715">Nagaralu</option>
+                            <option ""="" value="716">Nai</option>
+                            <option ""="" value="717">Naicker</option>
+                            <option ""="" value="718">Naicker - Others</option>
+                            <option ""="" value="719">Naicker - Vanniya Kula Kshatriyar</option>
+                            <option ""="" value="720">Naidu</option>
+                            <option ""="" value="721">Naik</option>
+                            <option ""="" value="722">Nair</option>
+                            <option ""="" value="723">Namasudra / Namassej</option>
+                            <option ""="" value="724">Nambiar</option>
+                            <option ""="" value="725">Namdarlu</option>
+                            <option ""="" value="726">Nanjil Mudali</option>
+                            <option ""="" value="727">Nanjil Nattu Vellalar</option>
+                            <option ""="" value="729">Nanjil pillai</option>
+                            <option ""="" value="728">Nanjil Vellalar</option>
+                            <option ""="" value="730">Nankudi Vellalar</option>
+                            <option ""="" value="731">Napit</option>
+                            <option ""="" value="732">Nattu Gounder</option>
+                            <option ""="" value="733">Nattukottai Chettiar</option>
+                            <option ""="" value="734">Nayaka</option>
+                            <option ""="" value="735">Neeli</option>
+                            <option ""="" value="736">Neeli Saali</option>
+                            <option ""="" value="737">Nema</option>
+                            <option ""="" value="738">Nepali</option>
+                            <option ""="" value="739">Nessi</option>
+                            <option ""="" value="740">Nhavi</option>
+                            <option ""="" value="741">Ontari</option>
+                            <option ""="" value="742">Oswal</option>
+                            <option ""="" value="743">Otari</option>
+                            <option ""="" value="744">Othuvaar</option>
+                            <option ""="" value="745">Padmasali</option>
+                            <option ""="" value="746">Padmashali</option>
+                            <option ""="" value="747">Padmavati Porwal</option>
+                            <option ""="" value="748">Pagadala</option>
+                            <option ""="" value="749">Pal</option>
+                            <option ""="" value="750">Pallan / Devandra Kula Vellalan</option>
+                            <option ""="" value="751">Panan</option>
+                            <option ""="" value="752">Panchal</option>
+                            <option ""="" value="753">Pandaram</option>
+                            <option ""="" value="754">Pandiya Vellalar</option>
+                            <option ""="" value="755">Panicker</option>
+                            <option ""="" value="756">Pannirandam Chettiar</option>
+                            <option ""="" value="757">Paravan / Bharatar</option>
+                            <option ""="" value="758">Parit</option>
+                            <option ""="" value="759">Parkava Kulam</option>
+                            <option ""="" value="760">Parsi</option>
+                            <option ""="" value="761">Partraj</option>
+                            <option ""="" value="762">Parvatha Rajakulam</option>
+                            <option ""="" value="763">Pasi</option>
+                            <option ""="" value="764">Paswan / Dusadh</option>
+                            <option ""="" value="765">Patel</option>
+                            <option ""="" value="766">Pathare Prabhu</option>
+                            <option ""="" value="767">Patil</option>
+                            <option ""="" value="768">Patnaick/Sistakaranam</option>
+                            <option ""="" value="769">Patra</option>
+                            <option ""="" value="770">Pattinavar</option>
+                            <option ""="" value="771">Pattusali</option>
+                            <option ""="" value="772">Patwa</option>
+                            <option ""="" value="773">Perika</option>
+                            <option ""="" value="774">Perika/Puragiri Kshatriya</option>
+                            <option ""="" value="775">Pillai</option>
+                            <option ""="" value="776">Poosala</option>
+                            <option ""="" value="777">Porwal</option>
+                            <option ""="" value="778">Porwal / Porwar</option>
+                            <option ""="" value="779">Poundra</option>
+                            <option ""="" value="780">Prajapati</option>
+                            <option ""="" value="781">Pulaya / Cheruman</option>
+                            <option ""="" value="782">Raigar</option>
+                            <option ""="" value="783">Rajaka</option>
+                            <option ""="" value="784">Rajastani</option>
+                            <option ""="" value="785">Rajbhar</option>
+                            <option ""="" value="786">Rajbonshi</option>
+                            <option ""="" value="787">Rajpurohit</option>
+                            <option ""="" value="788">Rajput</option>
+                            <option ""="" value="789">Ramanandi</option>
+                            <option ""="" value="790">Ramdasia</option>
+                            <option ""="" value="791">Ramgariah</option>
+                            <option ""="" value="792">Ramoshi</option>
+                            <option ""="" value="793">Rastogi</option>
+                            <option ""="" value="794">Rathi</option>
+                            <option ""="" value="795">Rauniar</option>
+                            <option ""="" value="796">Ravidasia</option>
+                            <option ""="" value="797">Rawat</option>
+                            <option ""="" value="798">Reddy</option>
+                            <option ""="" value="799">Relli</option>
+                            <option ""="" value="800">Rohit / Chamar</option>
+                            <option ""="" value="801">Ror</option>
+                            <option ""="" value="805">Sadgope</option>
+                            <option ""="" value="806">Sadhu Chetty</option>
+                            <option ""="" value="807">Sagara (Uppara)</option>
+                            <option ""="" value="808">Saha</option>
+                            <option ""="" value="809">Sahu</option>
+                            <option ""="" value="810">Saini</option>
+                            <option ""="" value="811">Saiva Pillai Thanjavur</option>
+                            <option ""="" value="812">Saiva Pillai Tirunelveli</option>
+                            <option ""="" value="813">Saliya</option>
+                            <option ""="" value="814">Samagar</option>
+                            <option ""="" value="815">Sambava</option>
+                            <option ""="" value="816">Sathwara</option>
+                            <option ""="" value="817">Satnami</option>
+                            <option ""="" value="818">Savji</option>
+                            <option ""="" value="802">SC</option>
+                            <option ""="" value="819">Senai Thalaivar</option>
+                            <option ""="" value="820">Senguntha Mudaliyar</option>
+                            <option ""="" value="821">Sengunthar/Kaikolar</option>
+                            <option ""="" value="822">Settibalija</option>
+                            <option ""="" value="823">Setty Balija</option>
+                            <option ""="" value="824">Shaw / Sahu/Teli</option>
+                            <option ""="" value="825">Shettigar</option>
+                            <option ""="" value="826">Shilpkar</option>
+                            <option ""="" value="827">Shimpi/Namdev</option>
+                            <option ""="" value="828">Sindhi</option>
+                            <option ""="" value="829">Sindhi-Amil</option>
+                            <option ""="" value="830">Sindhi-Baibhand</option>
+                            <option ""="" value="831">Sindhi-Bhanusali</option>
+                            <option ""="" value="832">Sindhi-Bhatia</option>
+                            <option ""="" value="833">Sindhi-Chhapru</option>
+                            <option ""="" value="834">Sindhi-Dadu</option>
+                            <option ""="" value="835">Sindhi-Hyderabadi</option>
+                            <option ""="" value="836">Sindhi-Larai</option>
+                            <option ""="" value="837">Sindhi-Larkana</option>
+                            <option ""="" value="838">Sindhi-Lohana</option>
+                            <option ""="" value="839">Sindhi-Rohiri</option>
+                            <option ""="" value="840">Sindhi-Sahiti</option>
+                            <option ""="" value="841">Sindhi-Sakkhar</option>
+                            <option ""="" value="842">Sindhi-Sehwani</option>
+                            <option ""="" value="843">Sindhi-Shikarpuri</option>
+                            <option ""="" value="844">Sindhi-Thatai</option>
+                            <option ""="" value="803">SKP</option>
+                            <option ""="" value="845">Sonar</option>
+                            <option ""="" value="846">Soni</option>
+                            <option ""="" value="847">Sonkar</option>
+                            <option ""="" value="848">Sourashtra</option>
+                            <option ""="" value="849">Sozhia Chetty</option>
+                            <option ""="" value="850">Sozhiya Vellalar</option>
+                            <option ""="" value="851">Srisayana</option>
+                            <option ""="" value="804">ST</option>
+                            <option ""="" value="852">Sugali (Naika)</option>
+                            <option ""="" value="853">Sunari</option>
+                            <option ""="" value="854">Sundhi</option>
+                            <option ""="" value="855">Surya Balija</option>
+                            <option ""="" value="856">Suthar</option>
+                            <option ""="" value="857">Swakula Sali</option>
+                            <option ""="" value="858">Tamboli</option>
+                            <option ""="" value="859">Tanti</option>
+                            <option ""="" value="860">Tantubai</option>
+                            <option ""="" value="861">Telaga</option>
+                            <option ""="" value="862">Teli</option>
+                            <option ""="" value="863">Telugupatti</option>
+                            <option ""="" value="864">Thakkar</option>
+                            <option ""="" value="865">Thakore</option>
+                            <option ""="" value="866">Thakur</option>
+                            <option ""="" value="867">Thandan</option>
+                            <option ""="" value="868">Thigala</option>
+                            <option ""="" value="869">Thiyya</option>
+                            <option ""="" value="870">Thiyya Thandan</option>
+                            <option ""="" value="871">Thogata Veera Kshatriya</option>
+                            <option ""="" value="872">Thogata Veerakshathriya</option>
+                            <option ""="" value="873">Thondai Mandala Vellalar</option>
+                            <option ""="" value="874">Thota</option>
+                            <option ""="" value="875">Tili</option>
+                            <option ""="" value="876">Togata</option>
+                            <option ""="" value="877">Tonk Kshatriya</option>
+                            <option ""="" value="878">Turupu Kapu</option>
+                            <option ""="" value="879">Ummar / Umre / Bagaria</option>
+                            <option ""="" value="880">Urali Gounder</option>
+                            <option ""="" value="881">Urs</option>
+                            <option ""="" value="882">Vada Balija</option>
+                            <option ""="" value="883">Vadambar</option>
+                            <option ""="" value="884">Vaddera</option>
+                            <option ""="" value="885">Vadugan</option>
+                            <option ""="" value="886">Vaish</option>
+                            <option ""="" value="887">Vaishnav</option>
+                            <option ""="" value="888">Vaishnav Dishaval</option>
+                            <option ""="" value="889">Vaishnav Kapol</option>
+                            <option ""="" value="890">Vaishnav Khadyata</option>
+                            <option ""="" value="891">Vaishnav Lad</option>
+                            <option ""="" value="892">Vaishnav Modh</option>
+                            <option ""="" value="893">Vaishnav Porvad</option>
+                            <option ""="" value="894">Vaishnav Shrimali</option>
+                            <option ""="" value="895">Vaishnav Sorathaiya</option>
+                            <option ""="" value="896">Vaishnav Vania</option>
+                            <option ""="" value="897">Vaishnava</option>
+                            <option ""="" value="898">Vaishya</option>
+                            <option ""="" value="899">Vaishya Vani</option>
+                            <option ""="" value="900">Valluvan</option>
+                            <option ""="" value="901">Valmiki</option>
+                            <option ""="" value="902">Vani</option>
+                            <option ""="" value="903">Vani / Vaishya</option>
+                            <option ""="" value="904">Vania</option>
+                            <option ""="" value="905">Vanika Vyshya</option>
+                            <option ""="" value="906">Vaniya</option>
+                            <option ""="" value="907">Vaniya Chettiar</option>
+                            <option ""="" value="908">Vanjara</option>
+                            <option ""="" value="909">Vanjari</option>
+                            <option ""="" value="910">Vankar</option>
+                            <option ""="" value="911">Vannar</option>
+                            <option ""="" value="912">Vannia Kula Kshatriyar</option>
+                            <option ""="" value="913">Variar</option>
+                            <option ""="" value="914">Varshney</option>
+                            <option ""="" value="915">Varshney (Barahseni)</option>
+                            <option ""="" value="916">Veera Saivam</option>
+                            <option ""="" value="917">Veerakodi Vellala</option>
+                            <option ""="" value="918">Velaan</option>
+                            <option ""="" value="919">Velama</option>
+                            <option ""="" value="920">Vellalar</option>
+                            <option ""="" value="921">Vellan Chettiars</option>
+                            <option ""="" value="922">Veluthedathu Nair</option>
+                            <option ""="" value="923">Vettuva Gounder</option>
+                            <option ""="" value="924">Vettuvan</option>
+                            <option ""="" value="925">Vijayvargia</option>
+                            <option ""="" value="926">Vilakithala Nair</option>
+                            <option ""="" value="927">Vilakkithala Nair</option>
+                            <option ""="" value="928">Vishwakarma</option>
+                            <option ""="" value="929">Viswabrahmin</option>
+                            <option ""="" value="930">Vokkaligar</option>
+                            <option ""="" value="931">Vysya</option>
+                            <option ""="" value="932">Yadav</option>
+                            <option ""="" value="933">Yadava Naidu</option>
+                            <option ""="" value="934">Yellapu</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-label">
+                    <a href="" name="profile_search" class="btn btn-success">Search Now</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="basic_reset" value="Clear" class="btn btn-secondary">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--  -->
+
+<!--  -->
+
+{% endblock %}

@@ -1,0 +1,592 @@
+{% extends 'user_dash.html' %} {% load static %} {% block content %}
+<!--  -->
+<div class="container px-5 py-2" id="myprofile">
+    <h2 class="pb-2 border-bottom">MY ACCOUNT</h2>
+
+    <div class="row row-cols-sm-1 row-cols-lg-2 align-items-stretch g-4 py-5">
+        <!--  -->
+        <div class="col-lg-9">
+            <div class="border-bottom clearfix">
+                <h3 style="margin-top: 0; color: blueviolet">
+                    {{user.name}} -
+                    <span style="font-size: 15px; color: blue">GMR5306</span>
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <h4>Basic Informations</h4>
+                    <div class="list-group">
+                        <ul class="" id="imgslider" style="overflow: hidden">
+                            <li class="list-unstyled">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEXk5ueutLeqsbTn6eqpr7PJzc/j5ebf4eLZ3N2wtrnBxsjN0NLGysy6v8HT1tissra8wMNxTKO9AAAFDklEQVR4nO2d3XqDIAxAlfivoO//tEOZWzvbVTEpic252W3PF0gAIcsyRVEURVEURVEURVEURVEURVEURVEURVEURVEURflgAFL/AirAqzXO9R7XNBVcy9TbuMHmxjN6lr92cNVVLKEurVfK/zCORVvW8iUBnC02dj+Wpu0z0Y6QlaN5phcwZqjkOkK5HZyPAjkIjSO4fIdfcOwFKkJlX4zPu7Ha1tIcwR3wWxyFhRG6g4Je0YpSPDJCV8a2Sv2zd1O1x/2WMDZCwljH+clRrHfWCLGK8REMiql//2si5+DKWKcWeAGcFMzzNrXC/0TUwQ2s6+LhlcwjTMlYsUIQzPOCb7YBiyHopyLXIEKPEkI/TgeuiidK/R9FniUDOjRDpvm0RhqjMyyXNjDhCfIMYl1gGjIMIuYsnGEYRMRZOMMunaLVwpWRW008v6fYKDIzxCwVAeNSO90BJW6emelYBRF/kHpYGVaoxTDAaxOFsfP9y8hpJ4xd7gOcij7JNGQ1EYFgkPJa1jQEiYZXRaRINKxSDUW9n+FT82lSKadkiru9/4XPqSLWOekGPoY05TAvLm9orm+YWuwHoBHkZKijNBJGmeb61eL6Ff/6q7bLr7yvv3vKGhpDRjvgjGaPz+gUg6YgcvpyAR2FIZ9U6nEEyZRTovmEU32KichpGn7C17XrfyH9gK/c0CMP05HZIM2uf9sEveizKveBy9/6Qt7o89ne33D525cfcIMW6ab+TMEukQbQbu+xu7X3A9bChmWaCeAkG17bpntwXgWxHaMzGPmUaR5dQZiKqRVeUZ3047fi3nAu28h4CHxCsZAgmEH8Y27jJAhm8c+5RQzRQNVGhVFSfxOYIjp/pP7RxzjevYXVGf4eLt+BJ1vCuLuLkrgABgCGXZ2wik5uty+oBvNirI6mkzhAf4Gsb58Hcm67Jzd+KwD10BYPLL3e0MjvKrgAULnOfveF/O4N2Xb9BZom3gJes3F9X5Zze8/6Yt09b4CrqsEjUv8oFBaR2rl+6CZr2xVrp24o/WitBKuGrrpl1+bFkmK2qXTON4VpbdfLa7o7y/WdLxG7lm2Lqh2clOwTegbvc/vj2U78CwhA87Bn8G5Nk3eOb0Nsr9flz3sG78UUtue4kpv1xvjg3TMay62BMlTlP+vrOMnJsRmt/ze0jsfkPPYdAH57hK+34PeOyc8XIXu5xT2HsUkdZz+adwg8HGFfQ3K5jtDvbUiO4Di9/ywHGrL88pDizZ++oTp+an+SMX/ndymUCwmHMdO7yuOx83pUx/eEMU0AvxWndwgidAqOZ8ypCwdEfvvEo6D9HwpA8wzvmOJEqAg9ySu8g4x0Hb9hSB/BANEKJ+LbPBU0lzbAJs4xt1AoshKkUGQmiH8/jJ0gdhTTLmSegHlPE0oOdXALnqDjKYh3px//fSgSWG8UqfrrIICzYYSJXRr9BSPbpNzw7gBjKjKOYI7ReIGqQRIap5+5MdjyvuDkExvGeXSlONWZAP3/AZBwJohU7QJRGU+cTVH18ELmRPNBmibW6MT/k1b0XhdkRBvyT6SB6EYv/GvhSmRNpGngRULsAlxMCGNXp7w3FfdEbTEEDdLI9TdIKRUzUesa3I461ER8cpNT7gMRhpKmYVS9ELOgCUQsa4SsulciKiLbY+AnHD8cpuhISsnxpamI84sbDq9qYJgf8wiiOBrC7Ml7M7ZECCqKoiiKoiiKoiiKoijv5AvJxlZRyNWWLwAAAABJRU5ErkJggg=="
+                                    alt="{{user.name}}" class="border border-3" width="150px" height="200px" />
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="list-unstyled text-center">
+                        <a class="btn btn-sm btn-primary" target="_blank" href="printprofile"><i class="icon-print"></i>
+                            Print
+                            Profile</a>
+                    </div>
+                </div>
+                <div class="col-lg-9 table-responsive">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                                <th>Looking For</th>
+                                <td>
+                                    {% if user.gender == 'Female' %}Male{% else %}Female{% endif %}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Gender, DOB &amp; Age</th>
+                                <td>{{user.gender}}, {{profile.dob}} (<span id="current_age"></span> Years )</td>
+                            </tr>
+                            <tr>
+                                <th>Religion - Caste</th>
+                                <td>{{profile.religion}} - {{profile.caste}}</td>
+                            </tr>
+                            <tr>
+                                <th>Marital Status</th>
+                                <td>{{profile.martialStatus}}</td>
+                            </tr>
+
+                            <tr>
+                                <th>Mother Tongue</th>
+                                <td>{{profile.motherTounge}}</td>
+                            </tr>
+                            <tr>
+                                <th>Country - State - City</th>
+                                <td>{{profile.country}} - {{profile.states}} - {{profile.city}}</td>
+                            </tr>
+                            <tr>
+                                <th>Education &amp; Income</th>
+                                <td>{{profile.education}} &amp; {{profile.income}}</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    <a href="#">
+                                        <div class="progress" style="margin-bottom: 0">
+                                            <div class="
+                          progress-bar progress-bar-striped
+                          bg-success
+                          progress-bar-animated
+                          active
+                        " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                                100%
+                                            </div>
+                                        </div>
+                                    </a>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <h4>Brief About {{user.name}}</h4>
+            <p>
+                {{other.describedProfile}}
+            </p>
+            <br />
+
+            <h4>Educational information</h4>
+            <div class="table-responsive">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th>Quallification</th>
+                            <td>{{education.qualification}}</td>
+                        </tr>
+                        <tr>
+                            <th>Occupation</th>
+                            <td>{{education.occupation}}</td>
+                        </tr>
+                        <tr>
+                            <th>Languages Known</th>
+                            <td>{{education.languagesKnown}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th colspan="2">
+                                <div class="progress" style="margin-bottom: 0">
+                                    <div class="
+                      progress-bar progress-bar-striped
+                      bg-success
+                      progress-bar-animated
+                      active
+                    " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                        100%
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Physical Information</h4>
+            <div class="table-responsive">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th>Complexation &amp; Body Type</th>
+                            <td>{{physical.complexion}}</td>
+                        </tr>
+                        <tr>
+                            <th>Height &amp; Weight</th>
+                            <td>
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-start">Height</th>
+                                            <td class="text-start">{{physical.height}}</td>
+                                            <th class="text-start">Weight</th>
+                                            <td class="text-start">{{physical.weight}}Kg</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Diet &amp; Blood Group</th>
+                            <td>
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-start">Diet</th>
+                                            <td class="text-start">{{physical.diet}}</td>
+                                            <th class="text-start">Blood Group</th>
+                                            <td class="text-start">{{physical.bloodGroup}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Habitations</th>
+                            <td>
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-start">Smoking</th>
+                                            <td class="text-start">{{physical.smoke}}</td>
+                                            <th class="text-start">Drinking</th>
+                                            <td class="text-start">{{physical.drink}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Physical Impaired?</th>
+                            <td>{{physical.physicallyImpaired}}</td>
+                        </tr>
+                        <tr>
+                            <th>Dressing Style</th>
+                            <td>{{physical.dressStyle}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th colspan="2">
+                                <a href="#">
+                                    <div class="progress" style="margin-bottom: 0">
+                                        <div class="
+                        progress-bar progress-bar-striped
+                        bg-success
+                        progress-bar-animated
+                        active
+                      " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                            100%
+                                        </div>
+                                    </div>
+                                </a>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Family Information</h4>
+            <div class="table-responsive">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th>Mother Name &amp; Occuapation</th>
+                            <td>{{family.motherName}} ({{family.motherOcuupation}})</td>
+                        </tr>
+                        <tr>
+                            <th>Father Name &amp; Occuapation</th>
+                            <td>{{family.fatherName}} ({{family.fatherOcuupation}})</td>
+                        </tr>
+                        <tr>
+                            <th>No.of Brothers &amp; Married</th>
+                            <td>{{family.noofBrothers}} &amp; {{family.noofBrothersMarried}}</td>
+                        </tr>
+                        <tr>
+                            <th>No.of Sisters &amp; Married</th>
+                            <td>{{family.noofSisters}} &amp; {{family.noofSistersMarried}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Family Background</h4>
+            <div class="table-responsive">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th>Family Value, Status &amp; Type</th>
+                            <td>{{family.familyValue}} , {{family.familyStatus}}  &amp;  {{family.familyType}}</td>
+                        </tr>
+                        <tr>
+                            <th>Family Income</th>
+                            <td>{{family.familyIncome}}</td>
+                        </tr>
+                        <tr>
+                            <th>Native</th>
+                            <td>{{family.nativeLocation}}</td>
+                        </tr>
+                        <tr>
+                            <th>Medical History</th>
+                            <td>{{family.medicalHistory}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th colspan="2">
+                                <a href="#">
+                                    <div class="progress" style="margin-bottom: 0">
+                                        <div class="
+                        progress-bar progress-bar-striped
+                        bg-success
+                        progress-bar-animated
+                        active
+                      " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                            90%
+                                        </div>
+                                    </div>
+                                </a>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Contact Details</h4>
+            <div class="table-responsive">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th>Mobile &amp; Phone</th>
+                            <td>
+                                <span style="color: #73ad21"><i class="fa fa-check icon-checkmark-circle"></i></span>{{contact.mobileCode}} {{user.phoneNumber}}
+                                <strong>&nbsp; &amp;</strong> {{contact.phoneNumber}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>
+                                <span style="color: #73ad21"><i class="fa fa-check icon-checkmark-circle"></i></span> {{user.email}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Whatsapp Number</th>
+                            <td>{{user.phoneNumber}}</td>
+                        </tr>
+                        <tr>
+                            <th>Address &amp; Location</th>
+                            <td>{{contact.otherLocation}}, {{contact.address}}, {{contact.pincode}}</td>
+                        </tr>
+                        <tr>
+                            <th>Residential Status</th>
+                            <td>{{contact.residenceIn}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th colspan="2">
+                                <a href="#">
+                                    <div class="progress" style="margin-bottom: 0">
+                                        <div class="
+                        progress-bar progress-bar-striped
+                        bg-success
+                        progress-bar-animated
+                        active
+                      " role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%">
+                                            88%
+                                        </div>
+                                    </div>
+                                </a>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Other Informations</h4>
+            <div class="table-responsive">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th>Hobbies</th>
+                            <td>{{other.hobbies}}</td>
+                        </tr>
+                        <tr>
+                            <th>Interests</th>
+                            <td>{{other.interest}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th colspan="2">
+                                <a href="#">
+                                    <div class="progress" style="margin-bottom: 0">
+                                        <div class="
+                        progress-bar progress-bar-striped
+                        bg-success
+                        progress-bar-animated
+                        active
+                      " role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%">
+                                            86%
+                                        </div>
+                                    </div>
+                                </a>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Partner Preferences</h4>
+            <div class="table-responsive">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th>Looking For</th>
+                            <td>{{patner.lookingFor}}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Age Between</th>
+                            <td>{{patner.ageFrom}} Years to {{patner.ageTo}} Years</td>
+                        </tr>
+
+                        <tr>
+                            <th>Country Living In</th>
+                            <td>{{patner.livingIn}}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Religion &amp; Caste</th>
+                            <td>{{patner.religion}} &amp; {{patner.caste}}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Complexion</th>
+                            <td>
+                                {{patner.complexion}}
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>Education</th>
+                            <td>
+                                {{patner.education}}
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>Occupation</th>
+                            <td>{{patner.occupation}}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Mother Tongue</th>
+                            <td>{{patner.motherTongue}}</td>
+                        </tr>
+                        <tr>
+                            <th>Height Expectation</th>
+                            <td>From {{patner.heightFrom}} to {{patner.heightTo}}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Residential Status</th>
+                            <td>{{patner.residentialState}}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Expectations in Brief</th>
+                            <td>{{patner.expectation}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th colspan="2">
+                                <a href="#">
+                                    <div class="progress" style="margin-bottom: 0">
+                                        <div class="
+                        progress-bar progress-bar-striped
+                        bg-success
+                        progress-bar-animated
+                        active
+                      " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                            100%
+                                        </div>
+                                    </div>
+                                </a>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 hidden-xs hidden-sm">
+            <div class="d-flex flex-column flex-shrink-0 p-3 bg-success bg-opacity-25">
+                <ul class="nav list-group flex-column">
+                    <li class="list-group-item active text-center" aria-current="true">
+                        <a style="color: #ffffff" href=" #" class="text-decoration-none"><strong>PROFILE
+                                COMPLETION</strong>
+                        </a>
+                    </li>
+                    <li class="list-group-item text-center" style="padding: 10px 20px">
+                        <h6>GMR5306({{user.name}})</h6>
+                        <a href="#" class="px-3 text-decoration-none border border-2" title="Profile Progress"><i
+                                class="fas fa-history"></i> Profile Progress</a>
+                        <h6 class="p-2">
+                            <strong><i class="far fa-envelope"></i></strong> {{user.email}}
+                            <span style="color: #73ad21"><i class="fas fa-check-square"></i></span>
+                        </h6>
+                        <h6>
+                            <strong class=""><i class="fas fa-mobile-alt"></i></strong> {{user.phoneNumber}}
+                            <span style="color: #73ad21"><i class="fas fa-check-square"></i></span>
+                        </h6>
+                        <div class="progress" style="margin: 10px 0">
+                            <div class="
+                  progress-bar progress-bar-striped
+                  bg-success
+                  progress-bar-animated
+                  active
+                " role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                                85%
+                            </div>
+                        </div>
+                    </li>
+                    <br />
+                    <li class="list-group-item active text-center" aria-current="true">
+                        <a style="color: #ffffff"><strong>My Account</strong></a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'dashboard' %}" class="px-3 text-decoration-none" title="Dashboard"><i
+                                class=""></i>Dashboard</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'myprofile' %}" class="px-3 text-decoration-none" title="Profile View"><i
+                                class=""></i>Profile
+                            View</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'profilevisit' %}" class="px-3 text-decoration-none" title="Profiles Visited"><i
+                                class=""></i>Profiles
+                            Visited</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'shortlist' %}" class="px-3 text-decoration-none" title="Shortlisted Profiles"><i class=""></i>Shortlisted Profiles</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'printprofile' %}" class="px-3 text-decoration-none" title="Print Own Profile" target="_blank"><i class="icon-print2"></i>Print Own Profile</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'deleteprofile' %}" class="px-3 text-decoration-none"><i
+                                title="Delete Confirmation" class="icon-bubble-trash"></i>Delete My Account</a>
+                    </li>
+                    <br />
+                    <li class="list-group-item active text-center" aria-current="true">
+                        <a style="color: #ffffff"><strong>Update Profile</strong></a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'basicinformation' %}" class="px-3 text-decoration-none" title="Basic Informations"><i class="icon-quill2"></i>Basic Informations</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'educationalinformation' %}" class="px-3 text-decoration-none" title="Educational Informations"><i class="icon-graduation"></i>Educational Informations</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'physicalinformation' %}" class="px-3 text-decoration-none" title="Physical Informations"><i class="icon-man"></i>Physical Informations</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'familyinformation' %}" class="px-3 text-decoration-none" title="Family Informations"><i class="icon-users4"></i>Family Informations</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'contactinformation' %}" class="px-3 text-decoration-none" title="Contact Informations"><i class="icon-address-book"></i>Contact Informations</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'otherinformation' %}" class="px-3 text-decoration-none" title="Other Informations"><i class="icon-direction"></i>Other Informations</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'patnerpreference' %}" class="px-3 text-decoration-none" title="Partner Preferences"><i class="icon-users5"></i>Partner Preferences</a>
+                    </li>
+                    <br />
+                    <li class="list-group-item active text-center" aria-current="true">
+                        <a style="color: #ffffff"><strong>MY MESSAGES</strong></a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'expresseduser' %}" class="px-3 text-decoration-none" title="Express Interests"><i class="icon-safari"></i>Express
+                            Interests</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'photoreqsent' %}" class="px-3 text-decoration-none" title="Photo Requests"><i
+                                class="icon-camera"></i>Photo
+                            Requests</a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'messagesuser' %}" class="px-3 text-decoration-none" title="Personalized Messages"><i class="icon-envelop3"></i>Personalized Messages</a>
+                    </li>
+                    <br>
+                    <li class="list-group-item active text-center" aria-current="true">
+                        <a style="color: #ffffff"><strong>MY IDENTITIES</strong></a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'managephotos' %}" class="px-3 text-decoration-none" title="Manage Photos"><i
+                                class="icon-images2"></i>Manage
+                            Photos</a>
+                    </li>
+                    <br />
+                    <li class="list-group-item active text-center" aria-current="true">
+                        <a style="color: #ffffff"><strong>ORDERS</strong></a>
+                    </li>
+                    <li class="list-group-item text-center">
+                        <a href="{% url 'mypackage' %}" class="px-3 text-decoration-none" title="My Orders"><i
+                                class="icon-cart"></i>My
+                            Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--  -->
+    </div>
+    <!--  -->
+</div>
+
+<!--  -->
+
+{% endblock %}

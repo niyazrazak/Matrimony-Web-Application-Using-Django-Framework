@@ -1,0 +1,315 @@
+{% extends 'user_dash.html' %} {% load static %} {% block content %}
+<!--  -->
+<div class="container px-5 py-2" id="basicinformation">
+    <h2 class="pb-2 border-bottom">PHYSICAL INFORMATION</h2>
+    <!--  -->
+
+    <div class="col-sm-12 col-md-9 col-lg-9">
+        <form action="{% url 'physicalupdate' %}" method="Post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_height">
+                        <label for="mem_height" class="form-control-plaintext"> Height </label><select id="mem_height" name="mem_height" class="form-select" placeholder="Height" data-width="100%" data-none-selected-text="Nothing selected" data-size="6"
+                            data-live-search="true" tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Height</option>
+                            <option value="3Ft 1in / 94.5 cm">3Ft 1in / 94.5 cm</option>
+                            <option value="3Ft 2in / 97.5 cm">3Ft 2in / 97.5 cm</option>
+                            <option value="3Ft 3in / 100.6 cm">3Ft 3in / 100.6 cm</option>
+                            <option value="3Ft 4in / 103.6 cm">3Ft 4in / 103.6 cm</option>
+                            <option value="3Ft 5in / 106.7 cm">3Ft 5in / 106.7 cm</option>
+                            <option value="3Ft 6in / 109.7 cm">3Ft 6in / 109.7 cm</option>
+                            <option value="3Ft 7in / 112.8 cm">3Ft 7in / 112.8 cm</option>
+                            <option value="3Ft 8in / 115.8 cm">3Ft 8in / 115.8 cm</option>
+                            <option value="3Ft 9in / 118.9 cm">3Ft 9in / 118.9 cm</option>
+                            <option value="3Ft 10in / 94.5 cm">3Ft 10in / 94.5 cm</option>
+                            <option value="3Ft 11in / 94.8 cm">3Ft 11in / 94.8 cm</option>
+                            <option value="4Ft / 95.1 cm">4Ft / 95.1 cm</option>
+                            <option value="4Ft 1in / 125 cm">4Ft 1in / 125 cm</option>
+                            <option value="4Ft 2in / 128 cm">4Ft 2in / 128 cm</option>
+                            <option value="4Ft 3in / 131.1 cm">4Ft 3in / 131.1 cm</option>
+                            <option value="4Ft 4in / 134.1 cm">4Ft 4in / 134.1 cm</option>
+                            <option value="4Ft 5in / 137.2 cm">4Ft 5in / 137.2 cm</option>
+                            <option value="4Ft 6in / 140.2 cm">4Ft 6in / 140.2 cm</option>
+                            <option value="4Ft 7in / 143.3 cm">4Ft 7in / 143.3 cm</option>
+                            <option value="4Ft 8in / 146.3 cm">4Ft 8in / 146.3 cm</option>
+                            <option value="4Ft 9in / 149.4 cm">4Ft 9in / 149.4 cm</option>
+                            <option value="4Ft 10in / 125 cm">4Ft 10in / 125 cm</option>
+                            <option value="4Ft 11in / 125.3 cm">4Ft 11in / 125.3 cm</option>
+                            <option value="5Ft / 125.6 cm">5Ft / 125.6 cm</option>
+                            <option value="5Ft 1in / 155.4 cm">5Ft 1in / 155.4 cm</option>
+                            <option value="5Ft 2in / 158.5 cm">5Ft 2in / 158.5 cm</option>
+                            <option value="5Ft 3in / 161.5 cm">5Ft 3in / 161.5 cm</option>
+                            <option value="5Ft 4in / 164.6 cm">5Ft 4in / 164.6 cm</option>
+                            <option value="5Ft 5in / 167.6 cm">5Ft 5in / 167.6 cm</option>
+                            <option value="5Ft 6in / 170.7 cm">5Ft 6in / 170.7 cm</option>
+                            <option value="5Ft 7in / 173.7 cm">5Ft 7in / 173.7 cm</option>
+                            <option value="5Ft 8in / 176.8 cm">5Ft 8in / 176.8 cm</option>
+                            <option value="5Ft 9in / 179.8 cm">5Ft 9in / 179.8 cm</option>
+                            <option value="5Ft 10in / 155.4 cm">5Ft 10in / 155.4 cm</option>
+                            <option value="5Ft 11in / 155.8 cm">5Ft 11in / 155.8 cm</option>
+                            <option value="6Ft / 156.1 cm">6Ft / 156.1 cm</option>
+                            <option value="6Ft 1in / 185.9 cm">6Ft 1in / 185.9 cm</option>
+                            <option value="6Ft 2in / 189 cm">6Ft 2in / 189 cm</option>
+                            <option value="6Ft 3in / 192 cm">6Ft 3in / 192 cm</option>
+                            <option value="6Ft 4in / 195.1 cm">6Ft 4in / 195.1 cm</option>
+                            <option value="6Ft 5in / 198.1 cm">6Ft 5in / 198.1 cm</option>
+                            <option value="6Ft 6in / 201.2 cm">6Ft 6in / 201.2 cm</option>
+                            <option value="6Ft 7in / 204.2 cm">6Ft 7in / 204.2 cm</option>
+                            <option value="6Ft 8in / 207.3 cm">6Ft 8in / 207.3 cm</option>
+                            <option value="6Ft 9in / 210.3 cm">6Ft 9in / 210.3 cm</option>
+                            <option value="6Ft 10in / 185.9 cm">6Ft 10in / 185.9 cm</option>
+                            <option value="6Ft 11in / 186.2 cm">6Ft 11in / 186.2 cm</option>
+                            <option value="7Ft / 186.5 cm">7Ft / 186.5 cm</option>
+                            <option value="7Ft 1in / 216.4 cm">7Ft 1in / 216.4 cm</option>
+                            <option value="7Ft 2in / 219.5 cm">7Ft 2in / 219.5 cm</option>
+                            <option value="7Ft 3in / 222.5 cm">7Ft 3in / 222.5 cm</option>
+                            <option value="7Ft 4in / 225.6 cm">7Ft 4in / 225.6 cm</option>
+                            <option value="7Ft 5in / 228.6 cm">7Ft 5in / 228.6 cm</option>
+                            <option value="7Ft 6in / 231.6 cm">7Ft 6in / 231.6 cm</option>
+                            <option value="7Ft 7in / 234.7 cm">7Ft 7in / 234.7 cm</option>
+                            <option value="7Ft 8in / 237.7 cm">7Ft 8in / 237.7 cm</option>
+                            <option value="7Ft 9in / 240.8 cm">7Ft 9in / 240.8 cm</option>
+                            <option value="7Ft 10in / 216.4 cm">7Ft 10in / 216.4 cm</option>
+                            <option value="7Ft 11in / 216.7 cm">7Ft 11in / 216.7 cm</option>
+                            <option value="8Ft / 217 cm">8Ft / 217 cm</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_weight"><label for="mem_weight" class="form-control-plaintext"> Weight </label><select id="mem_weight" name="mem_weight" class="form-select" placeholder="Weight" data-width="100%" data-none-selected-text="Nothing selected" data-size="6" data-live-search="true"
+                            tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Weight</option>
+                            <option value="30">30Kg</option>
+                            <option value="31">31Kg</option>
+                            <option value="32">32Kg</option>
+                            <option value="33">33Kg</option>
+                            <option value="34">34Kg</option>
+                            <option value="35">35Kg</option>
+                            <option value="36">36Kg</option>
+                            <option value="37">37Kg</option>
+                            <option value="38">38Kg</option>
+                            <option value="39">39Kg</option>
+                            <option value="40">40Kg</option>
+                            <option value="41">41Kg</option>
+                            <option value="42">42Kg</option>
+                            <option value="43">43Kg</option>
+                            <option value="44">44Kg</option>
+                            <option value="45">45Kg</option>
+                            <option value="46">46Kg</option>
+                            <option value="47">47Kg</option>
+                            <option value="48">48Kg</option>
+                            <option value="49">49Kg</option>
+                            <option value="50">50Kg</option>
+                            <option value="51">51Kg</option>
+                            <option value="52">52Kg</option>
+                            <option value="53">53Kg</option>
+                            <option value="54">54Kg</option>
+                            <option value="55">55Kg</option>
+                            <option value="56">56Kg</option>
+                            <option value="57">57Kg</option>
+                            <option value="58">58Kg</option>
+                            <option value="59">59Kg</option>
+                            <option value="60">60Kg</option>
+                            <option value="61">61Kg</option>
+                            <option value="62">62Kg</option>
+                            <option value="63">63Kg</option>
+                            <option value="64">64Kg</option>
+                            <option value="65">65Kg</option>
+                            <option value="66">66Kg</option>
+                            <option value="67">67Kg</option>
+                            <option value="68">68Kg</option>
+                            <option value="69">69Kg</option>
+                            <option value="70">70Kg</option>
+                            <option value="71">71Kg</option>
+                            <option value="72">72Kg</option>
+                            <option value="73">73Kg</option>
+                            <option value="74">74Kg</option>
+                            <option value="75">75Kg</option>
+                            <option value="76">76Kg</option>
+                            <option value="77">77Kg</option>
+                            <option value="78">78Kg</option>
+                            <option value="79">79Kg</option>
+                            <option value="80">80Kg</option>
+                            <option value="81">81Kg</option>
+                            <option value="82">82Kg</option>
+                            <option value="83">83Kg</option>
+                            <option value="84">84Kg</option>
+                            <option value="85">85Kg</option>
+                            <option value="86">86Kg</option>
+                            <option value="87">87Kg</option>
+                            <option value="88">88Kg</option>
+                            <option value="89">89Kg</option>
+                            <option value="90">90Kg</option>
+                            <option value="91">91Kg</option>
+                            <option value="92">92Kg</option>
+                            <option value="93">93Kg</option>
+                            <option value="94">94Kg</option>
+                            <option value="95">95Kg</option>
+                            <option value="96">96Kg</option>
+                            <option value="97">97Kg</option>
+                            <option value="98">98Kg</option>
+                            <option value="99">99Kg</option>
+                            <option value="100">100Kg</option>
+                            <option value="101">101Kg</option>
+                            <option value="102">102Kg</option>
+                            <option value="103">103Kg</option>
+                            <option value="104">104Kg</option>
+                            <option value="105">105Kg</option>
+                            <option value="106">106Kg</option>
+                            <option value="107">107Kg</option>
+                            <option value="108">108Kg</option>
+                            <option value="109">109Kg</option>
+                            <option value="110">110Kg</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_complexion"><label for="mem_complexion" class="form-control-plaintext"> Complexion </label><select id="mem_complexion" name="mem_complexion" class="form-select" placeholder="Complexion" data-width="100%" data-none-selected-text="Nothing selected"
+                            data-size="6" data-live-search="true" tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Complexion</option>
+                            <option value="Dark">Dark</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Very Fair">Very Fair</option>
+                            <option value="Wheatish">Wheatish</option>
+                            <option value="Wheatish Brown">Wheatish Brown</option>
+                            <option value="Wheatish Medium">Wheatish Medium</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_blood_group"><label for="mem_blood_group" class="form-control-plaintext"> Blood Group </label><select id="mem_blood_group" name="mem_blood_group" class="form-select" placeholder="Blood Group" data-width="100%" data-none-selected-text="Nothing selected"
+                            data-size="6" data-live-search="true" tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Blood Group</option>
+                            <option value="A-">A-</option>
+                            <option value="A1 -">A1 -</option>
+                            <option value="A1 +">A1 +</option>
+                            <option value="A1B -">A1B -</option>
+                            <option value="A1B +">A1B +</option>
+                            <option value="A2 -">A2 -</option>
+                            <option value="A2 +">A2 +</option>
+                            <option value="A2B -">A2B -</option>
+                            <option value="A2B +">A2B +</option>
+                            <option value="AB-">AB-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="B-">B-</option>
+                            <option value="B+">B+</option>
+                            <option value="O+">O+</option>
+                            <option value="A+">A+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_body_type">
+                        <label for="mem_body_type" class="form-control-plaintext"> Body Type </label>
+                        <select id="mem_body_type" name="mem_body_type" class="form-select" placeholder="Body Type" data-width="100%" data-none-selected-text="Nothing selected" data-size="6" data-live-search="true" tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Body Type</option>
+                            <option value="Athletic">Athletic</option>
+                            <option value="Average">Average</option>
+                            <option value="Heavy">Heavy</option>
+                            <option value="Slim">Slim</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_diet">
+                        <label for="mem_diet" class="form-control-plaintext"> Diet </label>
+                        <select id="mem_diet" name="mem_diet" class="form-select" placeholder="Diet" data-width="100%" data-none-selected-text="Nothing selected" data-size="6" data-live-search="true" tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Diet</option>
+                            <option value="Eggetarian">Eggetarian</option>
+                            <option value="Jain">Jain</option>
+                            <option value="Non-vegetarian">Non-vegetarian</option>
+                            <option value="Occasionally Non-Veg">Occasionally Non-Veg</option>
+                            <option value="Vegan">Vegan</option>
+                            <option value="Vegetarian">Vegetarian</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_smoke"><label for="mem_smoke" class="form-control-plaintext"> Smoking Habit? </label><select id="mem_smoke" name="mem_smoke" class="form-select" placeholder="Smoking Habit?" data-width="100%" data-none-selected-text="Nothing selected" data-size="6"
+                            data-live-search="true" tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Smoking Habit?</option>
+                            <option value="No">No</option>
+                            <option value="Occasionally">Occasionally</option>
+                            <option value="Yes">Yes</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_drink">
+                        <label for="mem_drink" class="form-control-plaintext"> Drinking Habit? </label>
+                        <select id="mem_drink" name="mem_drink" class="form-select" placeholder="Drinking Habit?" data-width="100%" data-none-selected-text="Nothing selected" data-size="6" data-live-search="true" tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Drinking Habit?</option>
+                            <option value="No">No</option>
+                            <option value="Occasionally">Occasionally</option>
+                            <option value="Yes">Yes</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_physically_impaired"><label for="mem_physically_impaired" class="form-control-plaintext"> Physically Impaired?
+                        </label><select id="mem_physically_impaired" name="mem_physically_impaired" class="form-select" placeholder="Physically Impaired?" data-width="100%" data-none-selected-text="Nothing selected" data-size="6" data-live-search="true"
+                            tabindex="-1" aria-hidden="true">
+                            <option value="">Choose Physically Impaired?</option>
+                            <option value="No">No</option>
+                            <option value="Yes">Yes</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-label" app-field-wrapper="mem_dress_style">
+                        <label for="mem_dress_style" class="form-control-plaintext"> Dress Style </label>
+                        <input type="text" id="mem_dress_style" name="mem_dress_style" class="form-control" placeholder="Dress Style" value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-label row ">
+                <div class=" col-sm-12 col-md-6 col-lg-6">
+                    <div class="text-center">
+                        <h5>Physical Informations</h5>
+                    </div>
+                    <div class="progress" style="margin-bottom: 0">
+                        <div class="
+                                    progress-bar progress-bar-striped
+                                    bg-success
+                                    progress-bar-animated
+                                    active
+                                  " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            100%
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-sm-12 col-md-6 col-lg-6">
+                    <div class="text-center">
+                        <i class="icon-history" style="color: #024884; font-size: 50px;"></i>
+                        <h5>Overall Profile Completion</h5>
+                    </div>
+                    <div class="progress" style="margin-bottom: 0">
+                        <div class="
+                                    progress-bar progress-bar-striped
+                                    bg-success
+                                    progress-bar-animated
+                                    active
+                                  " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                            85%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-label">
+                <div class="col-sm-6">
+                    <input type="submit" value="Update Physical Attributes" class="btn btn-success">
+                    <a href="" class="btn btn-secondary">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <!--  -->
+</div>
+<!--  -->
+{% endblock %}

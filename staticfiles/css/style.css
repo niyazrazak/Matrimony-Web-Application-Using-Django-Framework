@@ -1,0 +1,263 @@
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #1abc9c;
+    background-repeat: no-repeat;
+    font-family: "Sanchez", serif;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: #162b32;
+}
+
+
+/*  Desktop*/
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: initial;
+}
+
+.card0 {
+    box-shadow: 0px 4px 8px 0px #1a2c42;
+    border-radius: 20px;
+    background-color: #1abc9c;
+}
+
+.card1 {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #1a2238;
+    height: 100%;
+    color: #fff;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+.card2 {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.social-connect .fa-google {
+    color: #df4b37;
+    padding: 10px 12px;
+    font-size: 20px;
+}
+
+.social-connect .fa-facebook {
+    color: #3b5998;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.social-connect {
+    padding: 3px 0px 3px 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+}
+
+.social-connect:hover {
+    background-color: #eeeeee;
+}
+
+.line {
+    height: 1px;
+    width: 45%;
+    background-color: #e0e0e0;
+    margin-top: 10px;
+}
+
+.or {
+    width: 10%;
+}
+
+.text-sm {
+    font-size: 14px !important;
+}
+
+input {
+    padding: 10px 12px 10px 12px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2c3e50;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+input:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #512da8;
+    outline-width: 0;
+}
+
+::placeholder {
+    color: #eeeeee;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #eeeeee;
+}
+
+::-ms-input-placeholder {
+    color: #eeeeee;
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0;
+}
+
+.btn-blue {
+    background-color: #27ae60;
+    width: 100%;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.btn-blue:hover {
+    background-color: #311b92;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-0 {
+    color: #311b92;
+    background-color: #fff;
+    border-radius: 20px;
+    min-height: 352px;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -100px;
+    display: -webkit-box !important;
+}
+
+.carousel-indicators li {
+    cursor: pointer;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    opacity: 0.5;
+    margin: 5px !important;
+}
+
+.carousel-indicators li.active {
+    opacity: 1;
+    width: 50px !important;
+    height: 50px !important;
+    margin-top: 0px !important;
+    border: 2px solid #fff;
+}
+
+.carousel-indicators li#li1 {
+    background: url("/staticfiles/images/bride1.jpg") !important;
+    background-size: cover !important;
+}
+
+.carousel-indicators li#li2 {
+    background: url("/staticfiles/images/bride2.jpg") !important;
+    background-size: cover !important;
+}
+
+.carousel-indicators li#li3 {
+    background: url("/staticfiles/images/Groom1.jpeg") !important;
+    background-size: cover !important;
+}
+
+.carousel-indicators li#li4 {
+    background: url("/staticfiles/images/Groom3.jpeg") !important;
+    background-size: cover !important;
+}
+
+.carousel-indicators li#li5 {
+    background: url("/staticfiles/images/Groom2.jpeg") !important;
+    background-size: cover !important;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.content {
+    color: #000;
+    font-size: 14px;
+}
+
+.social {
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 991px) {
+    .card1 {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+    }
+    .card2 {
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+    }
+}
+
+
+/* Footer */
+
+.display-3 {
+    font-family: "Sanchez", serif;
+}
+
+p {
+    font-family: "Tajawal", sans-serif;
+}
+
+.lead {
+    font-family: "Sanchez 200", serif;
+}
+
+
+/* Modal */
+
+
+/* .bg-color {
+  background-color: #74b9ff;
+} */
+
+
+/* Form */
+
+.mv-up {
+    margin-top: -9px !important;
+    margin-bottom: 8px !important;
+}
+
+.error {
+    color: #ff3333;
+    margin-left: 5px;
+}
+
+label.error {
+    display: flex;
+}

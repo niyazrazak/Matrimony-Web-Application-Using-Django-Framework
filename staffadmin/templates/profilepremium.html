@@ -1,0 +1,21 @@
+{% extends 'indexstaff.html' %}
+{%load static%}
+{% block content %}
+<!--  -->
+<div class="container-fluid px-5 py-3" id="premiumprofiles">
+    <h2 class="pb-2 border-bottom">PREMIUM USERS</h2>
+    <a href="freeuser" class="btn btn-sm btn-outline-danger">FREE</a>
+    <a href="silveruser" class="btn btn-sm btn-outline-success">SILVER</a>
+    <a href="golduser" class="btn btn-sm btn-outline-primary">GOLD</a>
+    <a href="diamonduser" class="btn btn-sm btn-outline-warning">DIAMOND</a>
+    <hr>
+
+    <div class="col-12">
+        {% block premiumuser %}
+        {% endblock %}
+
+    </div>
+</div>
+
+<!--  -->
+{% endblock %}

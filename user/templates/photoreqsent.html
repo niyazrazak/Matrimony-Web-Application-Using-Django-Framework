@@ -1,0 +1,67 @@
+{% extends 'photorequest.html' %}
+{% load static %}
+{% block expressed %}
+<div class="tab-pane active" id="expressed">
+    <h4 class="text-center">Photo Password Requests Sent</h4>
+    <div>
+        <div class="row">
+            <div class="col-md-12">
+                <!--  -->
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped text-center">
+                        <thead>
+                            <tr style="background: #006666; color: #ffffff;" role="row">
+                                <td colspan="4" rowspan="1">
+                                    <div class="row">
+                                        <div class="col-4">Accepted :0</div>
+                                        <div class="col-4">Declined :0</div>
+                                        <div class="col-4">Pending :3</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr role="row">
+                                <th class="sorting_asc" rowspan="1" colspan="1">Request To</th>
+                                <th width="50%" rowspan="1">Message</th>
+                                <th rowspan="1" colspan="1" style="width: 131px;" aria-label="Date">Date</th>
+                                <th rowspan="1" colspan="1">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr role="row">
+                                <td>GMR0063<br>
+                                    <h5>Aatifa</h5>
+                                </td>
+                                <td>Hai I am Hanna (GMR000006),I Like Your Profile, Please Send Your Photo Protect
+                                    Password
+                                </td>
+                                <td>27-Nov-2021</td>
+                                <td><a class="btn btn-warning">Pending</a></td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td>GMR0027<br>
+                                    <h5>Fayiz</h5>
+                                </td>
+                                <td>Hai I am Hanna (GMR000006),I Like Your Profile, Please Send Your Photo Protect
+                                    Password</td>
+                                <td>17-Sep-2021</td>
+                                <td><a class="btn btn-warning">Pending</a></td>
+                            </tr>
+                            <tr role="row">
+                                <td>BMS000033<br>
+                                    <h5>Ameen</h5>
+                                </td>
+                                <td>Hai I am Hanna (GMR000006),I Like Your Profile, Please Send Your Photo Protect
+                                    Password</td>
+                                <td>09-Aug-2021</td>
+                                <td><a class="btn btn-warning">Pending</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </div>
+</div>
+<!--  -->
+{% endblock %}

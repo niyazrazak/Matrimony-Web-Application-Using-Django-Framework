@@ -1,0 +1,36 @@
+{% extends 'indexstaff.html' %} {%load static%} {% block content %}
+<!--  -->
+
+<div class="container-fluid px-5 py-2" id="premiumprofiles">
+    <h2 class="pb-2 border-bottom">ADD OPTIONS</h2>
+    <div class="col-sm-12 col-md-9 col-lg-9">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addlanguageModal">
+            Add Languages
+        </button>
+        <!-- Modal Languages -->
+        <div class="modal fade" id="addlanguageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form action="" method="post">
+                        <div class="modal-body">
+                            <div class="form-label">
+                                <label for="new_language" class="form-control-plaintext">New Language Name</label>
+                                <input type="text" class="form-control" name="new_language" id="new_language" placeholder="Enter New Language" required>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Add Language</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'indexadmin.html' %} {%load static%} {% block content %}
+<div class="container-fluid px-5 py-3" id="allprofiles">
+    <h2 class="pb-2 border-bottom">ALL PROFILES</h2>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-sm table-hover">
+            <thead>
+                <tr>
+                    <th class="text-center">ID</th>
+                    <th class="text-center">USER ID</th>
+                    <th class="text-center">USER NAME</th>
+                    <th class="text-center">PRIMARY NUMBER</th>
+                    <th class="text-center">GENDER</th>
+                    <th class="text-center">AGE</th>
+                    <th class="text-center">CITY</th>
+                    <th class="text-center">MEMBERSHIP</th>
+                    <th class="text-center">STATUS</th>
+                    <th class="text-center">Date of Joined</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in user %}
+                <tr>
+                    <td class="text-center">{{ forloop.counter }} </td>
+                    <td class="text-center"><a href="http://" target="_blank" rel="noopener noreferrer" class="text-decoration-none">GM124</a></td>
+                    <td class="text-center">{{i.name}}</td>
+                    <td class="text-center">{{i.phoneNumber}}</td>
+                    <td class="text-center">{% if i.gender == 'Female' %}
+                        <i class="fas fa-venus text-danger"></i> {% else %}
+                        <i class="fas fa-mars text-primary"></i> {% endif %}
+                    </td>
+                    <td class="text-center">28</td>
+                    <td class="text-center">CALICUT</td>
+                    <td class="text-center">
+                        <div class="badge bg-danger">FREE</div>
+                    </td>
+                    <td class="text-center">
+                        <div class="badge bg-success">ACTIVE</div>
+                    </td>
+                    <td class="text-center">{{i.date_joined}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+{% endblock %}

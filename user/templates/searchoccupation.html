@@ -1,0 +1,278 @@
+{% extends 'user_dash.html' %}
+{% load static %}
+{% block content %}
+<!--  -->
+<div class="container px-5 py-5" id="homeadmin">
+    <h2 class="pb-2 border-bottom">OCCUPATION SEARCH</h2>
+
+    <!--  -->
+    <div class="container align-items-center g-4">
+
+        <form action="#" id="profile_search" class="row" role="form" name="profile_search" method="post"
+            accept-charset="utf-8">
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-label" app-field-wrapper="member_age_from">
+                            <label for="member_age_from" class="form-control-plaintext"> Age From </label>
+                            <select id="member_age_from" name="member_age_from" class="form-select"
+                                placeholder="Age From" data-width="100%" data-none-selected-text="Nothing selected"
+                                data-size="6" data-live-search="true" tabindex="-1" aria-hidden="true">
+                                <option value="">Choose Age From</option>
+                                <option ""="" value="18">18 Years</option>
+                                <option ""="" value="19">19 Years</option>
+                                <option ""="" value="20">20 Years</option>
+                                <option ""="" value="21">21 Years</option>
+                                <option ""="" value="22">22 Years</option>
+                                <option ""="" value="23">23 Years</option>
+                                <option ""="" value="24">24 Years</option>
+                                <option ""="" value="25">25 Years</option>
+                                <option ""="" value="26">26 Years</option>
+                                <option ""="" value="27">27 Years</option>
+                                <option ""="" value="28">28 Years</option>
+                                <option ""="" value="29">29 Years</option>
+                                <option ""="" value="30">30 Years</option>
+                                <option ""="" value="31">31 Years</option>
+                                <option ""="" value="32">32 Years</option>
+                                <option ""="" value="33">33 Years</option>
+                                <option ""="" value="34">34 Years</option>
+                                <option ""="" value="35">35 Years</option>
+                                <option ""="" value="36">36 Years</option>
+                                <option ""="" value="37">37 Years</option>
+                                <option ""="" value="38">38 Years</option>
+                                <option ""="" value="39">39 Years</option>
+                                <option ""="" value="40">40 Years</option>
+                                <option ""="" value="41">41 Years</option>
+                                <option ""="" value="42">42 Years</option>
+                                <option ""="" value="43">43 Years</option>
+                                <option ""="" value="44">44 Years</option>
+                                <option ""="" value="45">45 Years</option>
+                                <option ""="" value="46">46 Years</option>
+                                <option ""="" value="47">47 Years</option>
+                                <option ""="" value="48">48 Years</option>
+                                <option ""="" value="49">49 Years</option>
+                                <option ""="" value="50">50 Years</option>
+                                <option ""="" value="51">51 Years</option>
+                                <option ""="" value="52">52 Years</option>
+                                <option ""="" value="53">53 Years</option>
+                                <option ""="" value="54">54 Years</option>
+                                <option ""="" value="55">55 Years</option>
+                                <option ""="" value="56">56 Years</option>
+                                <option ""="" value="57">57 Years</option>
+                                <option ""="" value="58">58 Years</option>
+                                <option ""="" value="59">59 Years</option>
+                                <option ""="" value="60">60 Years</option>
+                                <option ""="" value="61">61 Years</option>
+                                <option ""="" value="62">62 Years</option>
+                                <option ""="" value="63">63 Years</option>
+                                <option ""="" value="64">64 Years</option>
+                                <option ""="" value="65">65 Years</option>
+                                <option ""="" value="66">66 Years</option>
+                                <option ""="" value="67">67 Years</option>
+                                <option ""="" value="68">68 Years</option>
+                                <option ""="" value="69">69 Years</option>
+                                <option ""="" value="70">70 Years</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-label" app-field-wrapper="member_age_to">
+                            <label for="member_age_to" class="form-control-plaintext"> Age To </label>
+                            <select id="member_age_to" name="member_age_to" class="form-select" placeholder="Age To"
+                                data-width="100%" data-none-selected-text="Nothing selected" data-size="6"
+                                data-live-search="true" tabindex="-1" aria-hidden="true">
+                                <option value="">Choose Age To</option>
+                                <option ""="" value="18">18 Years</option>
+                                <option ""="" value="19">19 Years</option>
+                                <option ""="" value="20">20 Years</option>
+                                <option ""="" value="21">21 Years</option>
+                                <option ""="" value="22">22 Years</option>
+                                <option ""="" value="23">23 Years</option>
+                                <option ""="" value="24">24 Years</option>
+                                <option ""="" value="25">25 Years</option>
+                                <option ""="" value="26">26 Years</option>
+                                <option ""="" value="27">27 Years</option>
+                                <option ""="" value="28">28 Years</option>
+                                <option ""="" value="29">29 Years</option>
+                                <option ""="" value="30">30 Years</option>
+                                <option ""="" value="31">31 Years</option>
+                                <option ""="" value="32">32 Years</option>
+                                <option ""="" value="33">33 Years</option>
+                                <option ""="" value="34">34 Years</option>
+                                <option ""="" value="35">35 Years</option>
+                                <option ""="" value="36">36 Years</option>
+                                <option ""="" value="37">37 Years</option>
+                                <option ""="" value="38">38 Years</option>
+                                <option ""="" value="39">39 Years</option>
+                                <option ""="" value="40">40 Years</option>
+                                <option ""="" value="41">41 Years</option>
+                                <option ""="" value="42">42 Years</option>
+                                <option ""="" value="43">43 Years</option>
+                                <option ""="" value="44">44 Years</option>
+                                <option ""="" value="45">45 Years</option>
+                                <option ""="" value="46">46 Years</option>
+                                <option ""="" value="47">47 Years</option>
+                                <option ""="" value="48">48 Years</option>
+                                <option ""="" value="49">49 Years</option>
+                                <option ""="" value="50">50 Years</option>
+                                <option ""="" value="51">51 Years</option>
+                                <option ""="" value="52">52 Years</option>
+                                <option ""="" value="53">53 Years</option>
+                                <option ""="" value="54">54 Years</option>
+                                <option ""="" value="55">55 Years</option>
+                                <option ""="" value="56">56 Years</option>
+                                <option ""="" value="57">57 Years</option>
+                                <option ""="" value="58">58 Years</option>
+                                <option ""="" value="59">59 Years</option>
+                                <option ""="" value="60">60 Years</option>
+                                <option ""="" value="61">61 Years</option>
+                                <option ""="" value="62">62 Years</option>
+                                <option ""="" value="63">63 Years</option>
+                                <option ""="" value="64">64 Years</option>
+                                <option ""="" value="65">65 Years</option>
+                                <option ""="" value="66">66 Years</option>
+                                <option ""="" value="67">67 Years</option>
+                                <option ""="" value="68">68 Years</option>
+                                <option ""="" value="69">69 Years</option>
+                                <option ""="" value="70">70 Years</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-label" app-field-wrapper="mem_occupation">
+                    <label for="mem_occupation" class="form-control-plaintext"> Occupation
+                    </label>
+                    <select id="mem_occupation" name="mem_occupation" class="form-select" placeholder="Occupation"
+                        data-width="100%" data-none-selected-text="Nothing selected" data-size="6"
+                        data-live-search="true" tabindex="-1" aria-hidden="true">
+                        <option value="">Choose Occupation</option>
+                        <option ""="" value="151">Accountant</option>
+                        <option ""="" value="152">Acting Professional</option>
+                        <option ""="" value="153">Actor</option>
+                        <option ""="" value="154">Administration Professional</option>
+                        <option ""="" value="156">Air Hostess</option>
+                        <option ""="" value="249">Any</option>
+                        <option ""="" value="158">Artisan</option>
+                        <option ""="" value="159">Audiologist</option>
+                        <option ""="" value="160">Banking Profession</option>
+                        <option ""="" value="161">Beautician</option>
+                        <option ""="" value="162">Biologist</option>
+                        <option ""="" value="163">Business Person</option>
+                        <option ""="" value="164">Chartered Accountant</option>
+                        <option ""="" value="165">Civil Engineer</option>
+                        <option ""="" value="166">Clerical Official</option>
+                        <option ""="" value="167">Commercial Pilot</option>
+                        <option ""="" value="168">Company Secretary</option>
+                        <option ""="" value="169">Computer Professional</option>
+                        <option ""="" value="170">Consultant</option>
+                        <option ""="" value="171">Contractor</option>
+                        <option ""="" value="172">Cost Accountant</option>
+                        <option ""="" value="173">Creative Person</option>
+                        <option ""="" value="174">Customer Support Professional</option>
+                        <option ""="" value="247">Data Entry Operator</option>
+                        <option ""="" value="175">Defense Employee</option>
+                        <option ""="" value="176">Dentist</option>
+                        <option ""="" value="177">Designer</option>
+                        <option ""="" value="178">Doctor</option>
+                        <option ""="" value="179">Economist</option>
+                        <option ""="" value="180">Engineer</option>
+                        <option ""="" value="181">Engineer (Mechanical)</option>
+                        <option ""="" value="182">Engineer (Project)</option>
+                        <option ""="" value="183">Entertainment Professional</option>
+                        <option ""="" value="184">Event Manager</option>
+                        <option ""="" value="185">Executive</option>
+                        <option ""="" value="186">Factory worker</option>
+                        <option ""="" value="187">Farmer</option>
+                        <option ""="" value="188">Fashion Designer</option>
+                        <option ""="" value="189">Finance Professional</option>
+                        <option ""="" value="190">Flight Attendant</option>
+                        <option ""="" value="245">GIS Analyst</option>
+                        <option ""="" value="191">Government Employee</option>
+                        <option ""="" value="244">Govt. Polytechnic Lecturer</option>
+                        <option ""="" value="192">Hardware Engineer</option>
+                        <option ""="" value="193">Health Care Professional</option>
+                        <option ""="" value="194">Home Maker</option>
+                        <option ""="" value="195">Hotel &amp; Restaurant Professional</option>
+                        <option ""="" value="246">HR</option>
+                        <option ""="" value="196">Human Resources Professional</option>
+                        <option ""="" value="197">Interior Designer</option>
+                        <option ""="" value="198">Investment Professional</option>
+                        <option ""="" value="199">IT / Telecom Professional</option>
+                        <option ""="" value="200">Journalist</option>
+                        <option ""="" value="201">Lawyer</option>
+                        <option ""="" value="202">Lecturer</option>
+                        <option ""="" value="203">Legal Professional</option>
+                        <option ""="" value="204">Manager</option>
+                        <option ""="" value="205">Marketing Professional</option>
+                        <option ""="" value="206">Media Professional</option>
+                        <option ""="" value="207">Medical Professional</option>
+                        <option ""="" value="208">Medical Transcriptionist</option>
+                        <option ""="" value="209">Merchant Naval Officer</option>
+                        <option ""="" value="150">Non-mainstream professional</option>
+                        <option ""="" value="210">Nurse</option>
+                        <option ""="" value="211">Occupational Therapist</option>
+                        <option ""="" value="212">Optician</option>
+                        <option ""="" value="213">Pharmacist</option>
+                        <option ""="" value="214">Physician Assistant</option>
+                        <option ""="" value="215">Physicist</option>
+                        <option ""="" value="216">Physiotherapist</option>
+                        <option ""="" value="217">Pilot</option>
+                        <option ""="" value="219">Police Constable</option>
+                        <option ""="" value="218">Politician</option>
+                        <option ""="" value="220">Production professional</option>
+                        <option ""="" value="221">Professor</option>
+                        <option ""="" value="222">Psychologist</option>
+                        <option ""="" value="223">Public Relations Professional</option>
+                        <option ""="" value="224">Real Estate Professional</option>
+                        <option ""="" value="225">Research Scholar</option>
+                        <option ""="" value="227">Retail Professional</option>
+                        <option ""="" value="226">Retired Person</option>
+                        <option ""="" value="228">Sales Professional</option>
+                        <option ""="" value="229">Scientist</option>
+                        <option ""="" value="230">Self-employed Person</option>
+                        <option ""="" value="231">Social Worker</option>
+                        <option ""="" value="232">Software Consultant</option>
+                        <option ""="" value="233">Software Engineer</option>
+                        <option ""="" value="234">Sportsman</option>
+                        <option ""="" value="235">Student</option>
+                        <option ""="" value="236">Teacher</option>
+                        <option ""="" value="237">Technician</option>
+                        <option ""="" value="238">Training Professional</option>
+                        <option ""="" value="239">Transportation Professional</option>
+                        <option ""="" value="240">Veterinary Doctor</option>
+                        <option ""="" value="241">Volunteer</option>
+                        <option ""="" value="242">Writer</option>
+                        <option ""="" value="243">Zoologist</option>
+                        <option ""="" value="698">Apostles</option>
+                        <option ""="" value="625">Assistant Pastor</option>
+                        <option ""="" value="248">Coco Business</option>
+                        <option ""="" value="700">Evangelists</option>
+                        <option ""="" value="595">Government Job</option>
+                        <option ""="" value="149">Not Working</option>
+                        <option ""="" value="624">Pastor</option>
+                        <option ""="" value="701">Pastors</option>
+                        <option ""="" value="699">Prophets</option>
+                        <option ""="" value="590">Shopkeeper</option>
+                        <option ""="" value="596">Sweet Shop Business ( Halwai )</option>
+                        <option ""="" value="702">Teacher - Bible College</option>
+                        <option ""="" value="591">Wholesale Trading Business</option>
+                    </select>
+                </div>
+                <div class="form-label">
+                    <a href="" name="profile_search" class="btn btn-success">Search Now</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="occupation_reset" value="Clear" class="btn btn-secondary">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--  -->
+</div>
+
+<!--  -->
+
+{% endblock %}

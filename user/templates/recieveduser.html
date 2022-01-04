@@ -1,0 +1,94 @@
+{% extends 'expressinterest.html' %}
+{% load static %}
+{% block expressed %}
+<div class="tab-pane active" id="received">
+    <h4 class="text-center">Interest Received</h4>
+    <div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered table-striped" role="grid">
+                    <thead>
+                        <tr style="background: #006666;" role="row">
+                            <td colspan="4" rowspan="1">
+                                <div class="row text-center">
+                                    <div class="col-4">Accepted :1</div>
+                                    <div class="col-4">Declined :1</div>
+                                    <div class="col-4">Pending :1</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <th class="text-center" rowspan="1" colspan="1" aria-label="From">
+                                From</th>
+                            <th class="text-center" rowspan="1" colspan="1" aria-label="Message">Message</th>
+                            <th class="text-center" rowspan="1" colspan="1" aria-label="Date">
+                                Date</th>
+                            <th class="text-center" rowspan="1" colspan="1" aria-label="Status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr role="row" class="odd">
+                            <td class="text-center">GMS073<br>
+                                <h5>Ajith</h5>
+                            </td>
+                            <td>Interest Sent From Ajith ( GMS073 )</td>
+                            <td class="text-center">24-Jul-2021</td>
+                            <td class="text-center"><a class="btn btn-success">Approved</a>
+                                <div class="btn-group">
+                                    <button class="btn btn-primary dropdown-toggle" id="dropdown03" href="#"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-user-minus"></i></button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                        <li><a class="dropdown-item" href="#">Approved</a></li>
+                                        <li><a class="dropdown-item" href="#">Decline</a></li>
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr role="row" class="even">
+                            <td class="text-center">GMS073<br>
+                                <h5>Ajith</h5>
+                            </td>
+                            <td>Interest Sent From Arun ( GMS075 )</td>
+                            <td class="text-center">27-Jun-2021</td>
+                            <td class="text-center"><a class="btn btn-danger">Declined</a>
+                                <div class="btn-group">
+                                    <button class="btn btn-primary dropdown-toggle" id="dropdown03" href="#"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-user-minus"></i></button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                        <li><a class="dropdown-item" href="#">Approved</a></li>
+                                        <li><a class="dropdown-item" href="#">Decline</a></li>
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td class="text-center">GMS073<br>
+                                <h5>Ajith</h5>
+                            </td>
+                            <td>Interest Sent From Shanid ( GMS045 )</td>
+                            <td class="text-center">24-Aug-2021</td>
+                            <td class="text-center"><a class="btn btn-warning">Pending</a>
+                                <div class="btn-group">
+                                    <button class="btn btn-primary dropdown-toggle" id="dropdown03" href="#"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-user-minus"></i></button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                        <li><a class="dropdown-item" href="#">Approved</a></li>
+                                        <li><a class="dropdown-item" href="#">Decline</a></li>
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
+{% endblock %}

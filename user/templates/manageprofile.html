@@ -1,0 +1,174 @@
+{% extends 'user_dash.html' %}
+{% load static %}
+{% block content %}
+<!--  -->
+<div class="container px-5 py-5" id="homeadmin">
+    <h2 class="pb-2 border-bottom">PROFILE SETTINGS</h2>
+
+    <div class="row row-cols-sm-1 row-cols-lg-2 align-items-stretch g-4 py-5">
+        <!--  -->
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+            <div class="page-header clearfix">
+                <h3>Manage Photo</h3>
+            </div>
+            <form action="https://demo.brinematriscript.com/profile/manage_photos" id="tab" role="form" class=""
+                name="photo_update" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                <input type="hidden" name="photo_member_id" value="5">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group" app-field-wrapper="photo_1">
+                            <div class="row">
+                                <div class="col-md-3"><a
+                                        href="https://demo.brinematriscript.com/data/members/dcfc95274fcea72b36d6d5052b792683eacb45b6.jpg"
+                                        class="image-popup-no-margins fancybox"><img style="width:100px;"
+                                            class="img-thumbnail"
+                                            src="https://demo.brinematriscript.com/data/members/dcfc95274fcea72b36d6d5052b792683eacb45b6.jpg"></a>
+                                </div>
+                                <div class="col-md-9"><label for="photo_1" class="control-label"> Photo 1 </label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <div class="input-group-text">
+                                                <i class="fa fa-trash" style="padding-right:10px"></i>
+                                                <label class="ckbox wd-16 mb-0">
+                                                    <input type="checkbox" id="photo_1_remove" name="photo_1_remove"
+                                                        class="mg-0"><span></span>
+                                                </label>
+                                            </div>
+                                        </div><input type="file" id="photo_1" name="photo_1" class="form-control"
+                                            value="https://demo.brinematriscript.com/data/members/dcfc95274fcea72b36d6d5052b792683eacb45b6.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group" app-field-wrapper="photo_2">
+                            <div class="row">
+                                <div class="col-md-3"><a
+                                        href="https://demo.brinematriscript.com/data/members/3b594195c23a2ac63d162da52f5f4ecad61b4f43.jpg"
+                                        class="image-popup-no-margins fancybox"><img style="width:100px;"
+                                            class="img-thumbnail"
+                                            src="https://demo.brinematriscript.com/data/members/3b594195c23a2ac63d162da52f5f4ecad61b4f43.jpg"></a>
+                                </div>
+                                <div class="col-md-9"><label for="photo_2" class="control-label"> Photo 2 </label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <div class="input-group-text">
+                                                <i class="fa fa-trash" style="padding-right:10px"></i>
+                                                <label class="ckbox wd-16 mb-0">
+                                                    <input type="checkbox" id="photo_2_remove" name="photo_2_remove"
+                                                        class="mg-0"><span></span>
+                                                </label>
+                                            </div>
+                                        </div><input type="file" id="photo_2" name="photo_2" class="form-control"
+                                            value="https://demo.brinematriscript.com/data/members/3b594195c23a2ac63d162da52f5f4ecad61b4f43.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group" app-field-wrapper="photo_3">
+                            <div class="row">
+                                <div class="col-md-3"><a
+                                        href="https://demo.brinematriscript.com/data/members/d5124a9e9b33e4d46e31564ece4da11e40e7499f.jpg"
+                                        class="image-popup-no-margins fancybox"><img style="width:100px;"
+                                            class="img-thumbnail"
+                                            src="https://demo.brinematriscript.com/data/members/d5124a9e9b33e4d46e31564ece4da11e40e7499f.jpg"></a>
+                                </div>
+                                <div class="col-md-9"><label for="photo_3" class="control-label"> Photo 3 </label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <div class="input-group-text">
+                                                <i class="fa fa-trash" style="padding-right:10px"></i>
+                                                <label class="ckbox wd-16 mb-0">
+                                                    <input type="checkbox" id="photo_3_remove" name="photo_3_remove"
+                                                        class="mg-0"><span></span>
+                                                </label>
+                                            </div>
+                                        </div><input type="file" id="photo_3" name="photo_3" class="form-control"
+                                            value="https://demo.brinematriscript.com/data/members/d5124a9e9b33e4d46e31564ece4da11e40e7499f.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="form-group" app-field-wrapper="photo_protect_password"><label
+                                for="photo_protect_password" class="control-label"> Photo Password </label><input
+                                type="text" id="photo_protect_password" name="photo_protect_password"
+                                class="form-control" placeholder="Photo Password" value=""></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group checkbox-custom checkbox-success"><label for="chk_photo_blur"
+                                class="inline control-label clearfix"> Photo Bluring </label>
+                            <div class="flex items-center "><input class="" type="checkbox" id="chk_photo_blur_1"
+                                    value="1" name="photo_blur" checked="checked"> <label class="chk_label"
+                                    for="chk_photo_blur_1"> <span style="padding-left:6px;">Photo Blur</span> </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group checkbox-custom checkbox-success"><label for="chk_photo_protect"
+                                class="inline control-label clearfix"> Protect Photos </label>
+                            <div class="flex items-center "><input class="" type="checkbox" id="chk_photo_protect_1"
+                                    value="1" name="photo_protect" checked="checked"> <label class="chk_label"
+                                    for="chk_photo_protect_1"> <span style="padding-left:6px;">Photo Protect</span>
+                                </label></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row ">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="hiring">
+                            <i class="icon-images2"
+                                style="color: rgb(2, 72, 132); font-size: 50px; --darkreader-inline-color:#7ec6fd;"
+                                data-darkreader-inline-color=""></i>
+                            <h5>Photo</h5>
+                        </div>
+                        <div class="progress progress-striped active progress-warning">
+                            <div style="width: 50%;" class="bar">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="hiring">
+                            <i class="icon-history"
+                                style="color: rgb(2, 72, 132); font-size: 50px; --darkreader-inline-color:#7ec6fd;"
+                                data-darkreader-inline-color=""></i>
+                            <h5>Overall Profile Completion</h5>
+                        </div>
+                        <div class="progress progress-striped active progress-success">
+                            <div style="width: 85%;" class="bar">85%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-sm-offset-4">
+                        <input type="submit" name="member_search" value="Update Photos" class="btn btn-success">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="reset" name="member_reset" value="Clear" class="btn btn-default">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--  -->
+    </div>
+    <!--  -->
+</div>
+
+<!--  -->
+
+{% endblock %}

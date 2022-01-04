@@ -1,0 +1,74 @@
+{% extends 'indexstaff.html' %}
+{%load static%}
+{% block content %}
+<!--  -->
+<div class="container-fluid px-5 py-3" id="premiumprofiles">
+    <h2 class="pb-2 border-bottom">Contact Request</h2>
+
+    <div class="table-responsive-sm">
+        <table class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th class="text-center" scope="col">ID</th>
+                    <th class="text-center" scope="col">DATE OF REQUEST</th>
+                    <th class="text-center" scope="col">USER ID</th>
+                    <th class="text-center" scope="col">USER NAME</th>
+                    <th class="text-center" scope="col">PRIMARY NUMBER</th>
+                    <th class="text-center" scope="col">REQUESTED PROFILE</th>
+                    <th class="text-center" scope="col">ACTION</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">1</td>
+                    <td class="text-center">2022-01-12</td>
+                    <td class="text-center"><a href="http://" target="_blank" rel="noopener noreferrer"
+                            class="text-decoration-none">GM124</a></td>
+                    <td class="text-center">IJAZ KARI</td>
+                    <td class="text-center">9996437527</td>
+                    <td class="text-center"><a href="http://" target="_blank" rel="noopener noreferrer"
+                            class="text-decoration-none">GMR1239</a></td>
+                    <td class="text-center"><a class="btn btn-warning btn-sm">Pending</a>
+                        <div class="btn-group">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" id="dropdown05" href="#"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user-minus"></i></button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                                <li><a class="dropdown-item" href="#">Approved</a></li>
+                                <li><a class="dropdown-item" href="#">Decline</a></li>
+                                <li><a class="dropdown-item" href="#">Pending</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">2</td>
+                    <td class="text-center">2021-01-12</td>
+                    <td class="text-center"><a href="http://" target="_blank" rel="noopener noreferrer"
+                            class="text-decoration-none">GM124</a></td>
+                    <td class="text-center">IJAZ KARI</td>
+                    <td class="text-center">9996437527</td>
+                    <td class="text-center"><a href="http://" target="_blank" rel="noopener noreferrer"
+                            class="text-decoration-none">GMR1239</a></td>
+                    <td class="text-center"><a class="btn btn-success btn-sm">APPROVED</a>
+                        <div class="btn-group">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" id="dropdown05" href="#"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user-minus"></i></button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                                <li><a class="dropdown-item" href="#">Approved</a></li>
+                                <li><a class="dropdown-item" href="#">Decline</a></li>
+                                <li><a class="dropdown-item" href="#">Pending</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<!--  -->
+{% endblock %}

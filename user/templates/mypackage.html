@@ -1,0 +1,51 @@
+{% extends 'user_dash.html' %} {% load static %} {% block content %}
+<!--  -->
+<div class="container px-5 py-2" id="basicinformation">
+    <h2 class="pb-2 border-bottom">MY ORDER</h2>
+    <!--  -->
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center">
+                <thead>
+                    <tr role="row">
+                        <th rowspan="1" colspan="1" style="width: 75px;" aria-label="Order ID #">
+                            Order ID</th>
+                        <th rowspan="1" colspan="1" style="width: 66px;" aria-label="Package">
+                            Package</th>
+                        <th rowspan="1" colspan="1" style="width: 128px;" aria-label="Validity:">Validity:</th>
+                        <th rowspan="1" colspan="1" style="width: 113px;" aria-label="Allowed Credits">Allowed Credits
+                        </th>
+                        <th rowspan="1" colspan="1" style="width: 84px;" aria-label="Order Price">Order Price</th>
+                        <th rowspan="1" colspan="1" style="width: 111px;" aria-label="Payment Mode">Payment Mode</th>
+                        <th rowspan="1" colspan="1" style="width: 153px;" aria-label="Order Received Date">Order
+                            Received Date</th>
+                        <th rowspan="1" colspan="1" style="width: 84px;" aria-label="Paid Status">Paid Status</th>
+                        <th rowspan="1" colspan="1" style="width: 52px;" aria-label="Invoice">
+                            Invoice</th>
+                        <th rowspan="1" colspan="1" style="width: 92px;" aria-label="Active Order">Active Order
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr role="row">
+                        <td class="fw-bold">1</td>
+                        <td>Gold</td>
+                        <td>42 / 90 Days</td>
+                        <td>50 Profiles</td>
+                        <td>₹ 4500.00</td>
+                        <td>Net banking</td>
+                        <td>20-10-2021 3:45 PM</td>
+                        <td>
+                            <div class="badge bg-danger">Paid</div>
+                        </td>
+                        <td><a class="badge bg-info text-decoration-none" href="#" target="_blank">View</a></td>
+                        <td><span style="color:green;"> Yes </span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--  -->
+</div>
+<!--  -->
+{% endblock %}

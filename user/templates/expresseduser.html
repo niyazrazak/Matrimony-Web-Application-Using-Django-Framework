@@ -1,0 +1,70 @@
+{% extends 'expressinterest.html' %}
+{% load static %}
+{% block expressed %}
+<div class="tab-pane active" id="expressed">
+    <h4 class="text-center">Interest Expressed</h4>
+    <div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr style="background: #006666; color: #ffffff;">
+                            <td colspan=" 4" rowspan="1">
+                                <div class="row text-center">
+                                    <div class="col-4">Accepted :1</div>
+                                    <div class="col-4">Declined :1</div>
+                                    <div class="col-4">Pending :3</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <th class="text-center" rowspan="1" colspan="1" aria-label="Sent To">Sent To</th>
+                            <th width="50%" class="text-center" rowspan="1" colspan="1" aria-label="Message">Message
+                            </th>
+                            <th class="text-center" rowspan="1" colspan="1" aria-label="Date">Date</th>
+                            <th class="text-center" rowspan="1" colspan="1" aria-label="Status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr role="row" class="odd">
+                            <td class="text-center">GM463<br>
+                                <h5>Al Ameen</h5>
+                            </td>
+                            <td class="text-start">Interest Sent From Hanna Becker ( GMR6433 )</td>
+                            <td class="text-center">29-Oct-2021</td>
+                            <td class="text-center"><a class="btn btn-success">Approved</a></td>
+                        </tr>
+                        <tr role="row" class="even">
+                            <td class="text-center">GMS052<br>
+                                <h5>Ijaz Kari</h5>
+                            </td>
+                            <td class="text-start">Interest Sent From Hanna Becker ( GMR6433 )</td>
+                            <td class="text-center">29-Oct-2021</td>
+                            <td class="text-center"><a class="btn btn-danger">Declined</a></td>
+                        </tr>
+                        <tr role="row" class="odd">
+                            <td class="text-center">GM0465<br>
+                                <h5>Fayiz</h5>
+                            </td>
+                            <td class="text-start">Interest Sent From Hanna Becker ( GMR6433 )</td>
+                            <td class="text-center">09-Oct-2021</td>
+                            <td class="text-center"><a class="btn btn-warning">Pending</a></td>
+                        </tr>
+                        <tr role="row" class="even">
+                            <td class="text-center">GMS0753<br>
+                                <h5>Shabeeb</h5>
+                            </td>
+                            <td class="text-start">I Hanna Becker (GMR6433) am interested in your profile. If you are
+                                interested in my profile, please contact me. Regards Smart Kalyanam.
+                            </td>
+                            <td class="text-center">17-Sep-2021</td>
+                            <td class="text-center"><a class="btn btn-warning">Pending</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'user_dash.html' %}
+{% load static %}
+{% block content %}
+<!--  -->
+<div class="container px-5 py-5" id="homeadmin">
+    <h2 class="pb-2 border-bottom">PHOTO REQUEST</h2>
+
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 border-bottom-0">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="{% url 'photoreqsent' %}" data-toggle="tab" aria-expanded="true" class="btn text-decoration-none">
+                    <strong>REQUEST SENT<span class="badge rounded-pill bg-warning">9</span></strong>
+                </a>
+            </li>
+            <li class="border-start border-1">
+                <a href="{% url 'photoreqreceived' %}" data-toggle="tab" aria-expanded="false" class="btn text-decoration-none">
+                    <strong>REQUEST RECEIVED <span class="badge rounded-pill bg-info">2</span></strong>
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            {% block expressed %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+<!--  -->
+
+{% endblock %}

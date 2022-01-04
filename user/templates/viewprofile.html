@@ -1,0 +1,160 @@
+{% extends 'user_dash.html' %}
+{% load static %}
+{% block content %}
+<!--  -->
+<div class="container-fluid px-5 py-5" id="userhome">
+    <div class="col-sm-12 col-md-9 col-lg-9 ms-5">
+
+        <div class="clearfix">
+            <h3 class="pb-2 border-bottom mt-0 text-danger">
+                Zoya-
+                <span class="fs-5 text-primary">GMR1239</span>
+            </h3>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="py-2 px-3 col-auto border">
+                    <div class="badge bg-danger text-wrap">Free Member</div>
+                    <br>
+                    <a target="_blank" href="#">
+                        <img class="img-fluid"
+                            src="https://media.istockphoto.com/photos/shes-beautiful-in-every-single-way-picture-id1209189181?k=20&m=1209189181&s=612x612&w=0&h=YPysng5cd_bqoww0n_yLuqSkbbvGCE5jm9Pp0GI0Oo0="
+                            alt="">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="dropdown">
+                    <button class="btn btn-primary form-control dropdown-toggle" id="dropdown04"
+                        data-bs-toggle="dropdown" aria-expanded="false">Profile Features</button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                        <li><a class="dropdown-item"><i class="fas fa-heart text-danger"></i> Shortlist Profile</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#messageModal"><i
+                                    class="fas fa-envelope"></i> Sent
+                                Message</a>
+                        </li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#photoreqModal"><i
+                                    class="fas fa-camera"></i> Photo
+                                Request</a>
+                        </li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#expressModal"><i
+                                    class="fas fa-heart"></i> Express
+                                interest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-9 col-md-9 col-lg-9">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th>Profile Created For</th>
+                            <td>Self</td>
+                        </tr>
+                        <tr>
+                            <th>Gender, DOB &amp; Age </th>
+                            <td>
+                                Female,
+                                28-10-1993 ( 28 Years )
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Religion -
+                                Caste</th>
+                            <td>
+                                Hindu -
+                                Thiya </td>
+                        </tr>
+                        <tr>
+                            <th>Marital Status</th>
+                            <td> Seperated</td>
+                        </tr>
+
+                        <tr>
+                            <th>Mother Tongue</th>
+                            <td>Malayalam</td>
+                        </tr>
+                        <tr>
+                            <th>Country - State - City</th>
+                            <td>
+                                India -
+                                Kerala -
+                                Calicut </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <h4 class="mt-3 fw-bold">Additional Information</h4>
+        <table class="table table-borderless">
+            <tbody>
+                <tr>
+                    <th>Education</th>
+                    <td>
+                        Post Graduate</td>
+                </tr>
+                <tr>
+                    <th>Quallification</th>
+                    <td>MBA</td>
+                </tr>
+                <tr>
+                    <th>Occupation</th>
+                    <td>
+                        Computer Professional </td>
+                </tr>
+                <tr>
+                    <th>Income</th>
+                    <td>Rs. 100001 - 125000</td>
+                </tr>
+                <tr>
+                    <th>Complexation &amp; Body Type</th>
+                    <td>
+                        Fair &amp;
+                        Average </td>
+                </tr>
+                <tr>
+                    <th>Height &amp; Weight</th>
+                    <td>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th>Height</th>
+                                    <td>4Ft 11in / 125.3 cm</td>
+                                    <th>Weight</th>
+                                    <td>43Kg</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Diet &amp; Blood Group</th>
+                    <td>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th>Diet</th>
+                                    <td>Non-vegetarian</td>
+                                    <th>Blood Gp</th>
+                                    <td> A1 +</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container">
+            <div class="text-center">
+                <div class="col-sm-3 col-md-3 col-lg-3 ">
+                    <a class="btn btn-danger btn-sm form-control" href="{% url 'viewfullprofile' %}"><i class="fas fa-eye"></i>
+                        View Full Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
+{% endblock %}

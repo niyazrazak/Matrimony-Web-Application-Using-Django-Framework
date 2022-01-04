@@ -1,0 +1,491 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SMART KALYANAM</title>
+
+    <link rel="canonical" href="https://smartkalyanam.herokuapp.com/">
+
+    <!-- Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{%static 'css/style.css'%}" />
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Ninth navbar example">
+        <div class="container-xl">
+            <a class="navbar-brand" href="#"><img src="{%static 'images/smartkalyanlogo.png'%}" alt="Logo" class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07XL">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalTour">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li>
+                        <p class="navbar-text">Already a member?</p>
+                    </li>
+                    <li>
+                        <button class="btn btn-light ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <div id="temp"></div>
+    <!-- Main View -->
+    <div class="container-fluid px-1 px-md-4 py-1 mx-auto" id="home">
+        <div class="card card0 border-0">
+            <div class="row d-flex">
+                <!-- view -->
+                <div class="col-lg-5">
+                    <div class="card1 pb-5">
+                        <div class="row px-1">
+                            <div class="text-center">
+                                <h1 class="pb-2 py-4 display-6 border-bottom">HAPPY STORIES</h1>
+                            </div>
+                        </div>
+                        <div class="row px-3 justify-content-center mt-4 mb-5">
+                            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" id="li1"></li>
+                                    <li data-bs-target="#myCarousel" data-bs-slide-to="1" id="li2"></li>
+                                    <li data-bs-target="#myCarousel" data-bs-slide-to="2" id="li3" class="active"></li>
+                                    <li data-bs-target="#myCarousel" data-bs-slide-to="3" id="li4"></li>
+                                    <li data-bs-target="#myCarousel" data-bs-slide-to="4" id="li5"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item card border-0 card-0">
+                                        <div class="text-center">
+                                            <img src="{%static 'images/bride1.jpg'%}" alt="pro pic" class="img-fluid profile-pic" />
+                                        </div>
+                                        <h6 class="font-weight-bold mt-5">Dr Usha</h6>
+                                        <hr width="50%" />
+                                        <p class="content mt-2 mb-0">
+                                            When the right time comes, the right person will to you. Thanks to Smart Kalyanam for joining us together.
+                                        </p>
+                                    </div>
+                                    <div class="carousel-item card border-0 card-0">
+                                        <div class="text-center">
+                                            <img src="{%static 'images/bride2.jpg'%}" alt="pro pic" class="img-fluid profile-pic" />
+                                        </div>
+                                        <h6 class="font-weight-bold mt-5">Amna Ahsa</h6>
+                                        <hr width="50%" />
+                                        <p class="content mt-2 mb-0">
+                                            Marriage is not about age,its about finding the right person.so i got my perfect match through Smart Kalyanam.Thankz Smart Kalyanam team for finding my soulmate.
+                                        </p>
+                                    </div>
+                                    <div class="carousel-item active card border-0 card-0">
+                                        <div class="text-center">
+                                            <img src="{%static 'images/Groom1.jpeg'%}" alt="pro pic" class="img-fluid profile-pic" />
+                                        </div>
+                                        <h6 class="font-weight-bold mt-5">Dr Al Ameen</h6>
+                                        <hr width="50%" />
+                                        <p class="content mt-2 mb-0">
+                                            It is awesome to find someone as special as my wife. cannot believe it still. Thanks Smart Kalyanam.
+                                        </p>
+                                    </div>
+                                    <div class="carousel-item card border-0 card-0">
+                                        <div class="text-center">
+                                            <img src="{%static 'images/Groom3.jpeg'%}" alt="pro pic" class="img-fluid profile-pic" />
+                                        </div>
+                                        <h6 class="font-weight-bold mt-5">Fayiz</h6>
+                                        <hr width="50%" />
+                                        <p class="content mt-2 mb-0">
+                                            It is awesome to find someone as special as my wife. Cannot believe it still. Thanks Smart Kalyanam.
+                                        </p>
+                                    </div>
+                                    <div class="carousel-item card border-0 card-0">
+                                        <div class="text-center">
+                                            <img src="{%static 'images/Groom2.jpeg'%}" alt="pro pic" class="img-fluid profile-pic" />
+                                        </div>
+                                        <h6 class="font-weight-bold mt-5">Shabeeb</h6>
+                                        <hr width="50%" />
+                                        <p class="content mt-2 mb-0">
+                                            We found the Perfect Person for us. Everything was just the way we imagined it to be we share the same dreams love each others families. Thank you Smart Kalyanam. You gave us such a good place to meet chat with the family, and your service people were
+                                            great in helping us.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row px-3 justify-content-center mt-4 mb-5">
+                            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    {% for i in adds %}
+                                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" id="li1" class="active"></li>
+                                    <style>
+                                        .carousel-indicators li#li1 {
+                                            background: url("/staticfiles/images/bride1.jpg") !important;
+                                            background-size: cover !important;
+                                        }
+                                    </style>
+                                    {% endfor %}
+                                </ol>
+                                <div class="carousel-inner">
+                                    {% for i in adds %}
+                                    <div class="carousel-item active card border-0 card-0">
+                                        <div class="text-center">
+                                            <img src="{%static 'images/bride1.jpg'%}" alt="pro pic" class="img-fluid profile-pic" />
+                                        </div>
+                                        <h6 class="font-weight-bold mt-5">{{i.name}}</h6>
+                                        <hr width="50%" />
+                                        <p class="content mt-2 mb-0">
+                                            {{i.caption}}
+                                        </p>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- form -->
+                <div class="col-lg-7">
+                    <div class="card card1 border-0 px-4 px-sm-5 py-5">
+                        <h3 class="mb-1">Join World’s No.1 Matrimonial Website</h3>
+                        <p class="mb-4 text-sm">Register Now - its free!</p>
+                        {% if messages %} {% for message in messages %}
+                        <small class='fw-bold'>{{message}}</small> {% endfor %} {% endif %}
+                        <!-- Form section -->
+                        <form action="{% url 'signup' %}" id="second_form" method="POST">
+                            {% csrf_token %}
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="mb-0 " for="profile">
+                                            <h6 class="mb-0 text-sm">Create Profile for *</h6>
+                                        </label>
+                                        <select class="form-select" id="profile" name="profile" required>
+                                            <option value="">Select</option>
+                                            <option value="Self">Self</option>
+                                            <option value="Parents">Parents</option>
+                                            <option value="Guardian">Guardian</option>
+                                            <option value="Friends">Friends</option>
+                                            <option value="Sibling">Sibling</option>
+                                            <option value="Cousins">Cousins</option>
+                                            <option value="Relatives">Relatives</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="mb-0" for="name">
+                                            <h6 class="mb-0 text-sm">Bride / Groom Name *</h6>
+                                        </label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Arya Khan" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="mb-0" for="email">
+                                            <h6 class="mb-0 text-sm">Email *</h6>
+                                        </label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="aryakhan@gmail.com" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="mb-0" for="number">
+                                            <h6 class="mb-0 text-sm">Phone Number *</h6>
+                                        </label>
+                                        <input type="text" id="number" name="number" class="form-control" pattern="[7-9]{1}[0-9]{9}" title="Phone number with 7-9 and remaing 9 digit with 0-9" placeholder="Phone Number" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <!--  -->
+                                    <div class="col-md-12 mt-3">
+                                        <div class="form-group">
+                                            <label class="mb-3 mr-1" for="gender">Gender: </label>
+                                            <input type="radio" class="btn-check" name="gender" value="Male" id="male" autocomplete="off" required>
+                                            <label class="btn btn-sm btn-outline-light" for="male">Male</label>
+
+                                            <input type="radio" class="btn-check" name="gender" value="Female" id="female" autocomplete="off" required>
+                                            <label class="btn btn-sm btn-outline-light" for="female">Female</label>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="mb-0" for="password">
+                                            <h6 class="mb-0 text-sm">Password *</h6>
+                                        </label>
+                                        <input type="password" id="password" name="password" class="form-control" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row px-3 mb-3">
+                                <small class="text-muted">By signing up, you agree our
+                                    <a href="" class="text-primary">Terms of services</a> and
+                                    <a href="" class="text-primary">Privacy Policy</a></small>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-sm-6">
+                                    <button class="btn btn-outline-primary btn-blue text-center mb-1 py-2" type="submit">
+                                        Create Account
+                                    </button>
+                                </div>
+                        </form>
+                        </div>
+                        <div class="row px-3 mb-4">
+                            <div class="line"></div>
+                            <small class="text-muted or text-center">OR</small>
+                            <div class="line"></div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-sm-6">
+                                <p class="social-connect">
+                                    <span class="fab fa-facebook"></span><small class="pl-3 pr-1">Sign up with
+                                    Facebook</small>
+                                </p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="social-connect">
+                                    <span class="fab fa-google"></span><small class="pl-3 pr-1">Sign up with
+                                    Gmail</small>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <!-- form end -->
+                </div>
+            </div>
+        </div>
+        <!-- WHY US? -->
+        <div class="container px-4 py-5" id="aboutus">
+            <h2 class="pb-2 border-bottom text-center">WHY CHOOSE SMART KALYANAM?</h2>
+            <p class="text-start fw-light">The matrimonial website <strong>SMART KALYANAM</strong> is a highly regarded and popular site. We are well-known for our excellent matchmaking, easy navigation, and outstanding services. We are a leader in Indian Matrimonials thanks to our
+                unparalleled quality services. You can search for a potential bride or groom based on their mother tongue, country, religion and occupation. You can choose from a huge database of profiles.<br><br>
+                <strong>SMART KALYANAM</strong> was established in 2021 and is a leading <strong>Indian Matrimonial
+                Site</strong>. It has an extensive database with lakhs of potential brides and grooms profiles.
+                <strong>SMART KALYANAM's</strong> dedicated and talented professionals have helped build a comprehensive list of happy clients worldwide. Its benchmark is a million hits per day, which is steadily growing at an incredible rate.
+            </p>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+                <div class="feature col">
+                    <div class="feature-icon">
+                        <img src="{%static 'images/protection.svg'%}" height="200px" width="200px">
+                    </div>
+                    <h2>PROTECTION</h2>
+                    <p>Your safety is provided by leading anti-scam system in the industry.</p>
+                </div>
+                <div class="feature col">
+                    <div class="feature-icon">
+                        <img src="{%static 'images/verify.svg'%}" height="200px" width="200px">
+                    </div>
+                    <h2>VERIFICATION</h2>
+                    <p>All members are personally confirmed by our staff to prove they are real.</p>
+                </div>
+                <div class="feature col">
+                    <div class="feature-icon">
+                        <img src="{%static 'images/attention.svg'%}" height="200px" width="200px">
+                    </div>
+                    <h2>ATTENTION</h2>
+                    <p>Receive lots of attention from attractive members worldwide.</p>
+                </div>
+                <div class="feature col">
+                    <div class="feature-icon">
+                        <img src="{%static 'images/date.svg'%}" height="200px" width="200px">
+                    </div>
+                    <h2>COMMUNICATION</h2>
+                    <p>Chat, send letters, call, share your photos and make presents.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="bg-dark">
+            <div class="container py-5">
+                <div class="row py-3">
+                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">About</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <a href="#" class="nav-link text-muted">Contact Us</a>
+                            </li>
+                            <li class="mb-2"><a href="#" class="nav-link text-muted">About Us</a></li>
+                            <li class="mb-2"><a href="#" class="nav-link text-muted">Stories</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">Help</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="#" class="nav-link text-muted">Payments</a></li>
+                            <li class="mb-2">
+                                <a href="#" class="nav-link text-muted">Cancellation</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">Policy</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <a href="#" class="nav-link text-muted">Return Policy</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="nav-link text-muted">Terms Of Use</a>
+                            </li>
+                            <li class="mb-2"><a href="#" class="nav-link text-muted">Security</a></li>
+                            <li class="mb-2"><a href="#" class="nav-link text-muted">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="#" class="nav-link text-muted">Login</a></li>
+                            <li class="mb-2"><a href="#" class="nav-link text-muted">Register</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">SMART KALYANAM</h6>
+                        <p class="text-muted mb-4">
+                            HiLite Business Park,<br />Calicut, India <br />+91 (9605) 440 757.
+                        </p>
+                        <ul class="list-inline mt-4">
+                            <li class="list-inline-item">
+                                <a href="#" target="_blank" title="twitter"><i class="fab fa-2x fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" target="_blank" title="facebook"><i class="fab fa-2x fa-facebook-f"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" target="_blank" title="instagram"><i class="fab fa-2x fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" target="_blank" title="pinterest"><i class="fab fa-2x fa-youtube"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" target="_blank" title="vimeo"><i class="fab fa-2x fa-google"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="p-0 m-0 b-0" />
+            <div class="bg-light py-2">
+                <div class="container text-center">
+                    <p class="text-muted mb-0 py-2">
+                        © 2021 SMART KALYANAM. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- End -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content card rounded-5 shadow bg-color">
+                    <div class="modal-header px-4 pb-2 border-bottom-0">
+                        <h5 class="modal-title">
+                            <img src="{%static 'images/smartkalyanlogo.png'%}" alt="smartkalyanam" class="">
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-5 pt-0">
+                        <small class="text-center fw-bold mb-0">Welcome Back! Please Login</small>
+                        <hr>
+                        <small class="fw-bold text-danger">
+                        {{mes}}
+                    </small>
+                        <!-- Login Form -->
+                        <form id="loginformuser" method="POST" action="{% url 'login' %}">
+                            {% csrf_token %}
+                            <div class="form-label mb-3">
+                                <label for="email" class="visually-hidden">Email address</label>
+                                <input type="email" class="form-control rounded-4" id="lemail" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-label">
+                                <label for="Password" class="visually-hidden">Password</label>
+                                <input type="password" class="form-control rounded-0" id="lpassword" name="password" placeholder="Password">
+                            </div>
+                            <div class="form-check d-flex justify-content-start">
+                                <input class="form-check-input" type="checkbox" value="" name="remember" id="remember" />
+                                <label class="form-check-label px-2" for="remember">Remember password </label>
+                            </div>
+                            <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit" value="Sign in">Sign
+                            in</button>
+                            <div class="row px-3">
+                                <small class="text-muted text-center">OR</small>
+                            </div>
+                            <div class="social-connect border-0">
+                                <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4 fab fa-facebook" type="submit">
+                                Sign in with Facebook
+                            </button>
+                                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4 fab fa-google" type="submit">
+                                Sign in with Gmail
+                            </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end -->
+        <!-- Contact us Modal -->
+        <div class="modal fade bg-dark" id="modalTour" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content rounded-6 shadow">
+                    <div class="modal-body p-5">
+                        <h2 class="fw-bold mb-0">Contact</h2>
+
+                        <ul class="d-grid gap-4 my-5 list-unstyled">
+                            <li class="d-flex gap-2">
+                                <div class="">
+                                    <div class="mb-0 fw-bolder">
+                                        <p><i class="fas fa-home"></i> <span> Smart Kalyanam, Fifth Floor </span><br><span>
+                                            HiLite
+                                            Business Park,<br> Palazhi </span><br><span>
+                                            Calicut, Kerala, India </span><br><span>Call: 9605440757 </span><span>Mob:
+                                            8111828558 </span> </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Great,
+                        thanks!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Modal End -->
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- Form Validation JS File -->
+        <script src="{%static 'javascript/indexvalidation.js'%}"></script>
+
+</body>
+
+</html>

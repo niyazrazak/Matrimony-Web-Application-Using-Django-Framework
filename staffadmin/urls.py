@@ -1,0 +1,32 @@
+from django.urls import path
+from .import views
+
+urlpatterns = [
+    path('smartlogin/', views.smartLogin, name='smartlogin'),
+    path('masterstaff/', views.indexStaff, name='masterstaff'),
+    path('logAdmins/', views.loginAdmin, name='logAdmins'),
+    path('staffhome/', views.homeStaff, name='staffhome'),
+    path('filteruser/', views.filteruserStaff, name='filteruser'),
+    path('morestaff/', views.moreStaff, name='morestaff'),
+    path('profilepremium/', views.profilepremiumStaff, name='profilepremium'),
+    path('unapproveduser/', views.unapproveduserStaff, name='unapproveduser'),
+    path('userprofiles/', views.userprofilesStaff, name='userprofiles'),
+    path('freeuser/', views.freeuserStaff, name='freeuser'),
+    path('silveruser/', views.silveruserStaff, name='silveruser'),
+    path('golduser/', views.golduserStaff, name='golduser'),
+    path('diamonduser/', views.diamonduserStaff, name='diamonduser'),
+    path('settingsstaff/', views.settingStaff, name='settingsstaff'),
+    path('staffprofile/', views.profileStaff, name='staffprofile'),
+    path('requestcontact/', views.requestcontactStaff, name='requestcontact'),
+    path('happystories/', views.happystoriesStaff, name='happystories'),
+    path('addstories/', views.addstoriesStaff, name='addstories'),
+    path('logoutstaff/', views.logoutStaff, name='logoutstaff'),
+    path('addoptions', views.addOptions, name='addoptions'),
+    # path('', views.Staff, name=''),
+    # path('', views.Staff, name=''),
+    # path('', views.Staff, name=''),
+    # path('', views.Staff, name=''),
+    # path('', views.Staff, name=''),
+    # path('', views.Staff, name=''),
+    # path('', views.Staff, name=''),
+]

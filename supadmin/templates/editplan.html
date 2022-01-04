@@ -1,0 +1,159 @@
+{% extends 'indexadmin.html' %} {%load static%} {% block content %}
+<!--  -->
+<div class="container-fluid px-5 py-3" id="newplans">
+    <h5 class="pb-2 border-bottom">EDIT PLAN</h5>
+    <!--  -->
+    <form action="{% url 'updateplan' pid=data.id %}" method="POST">
+        {% csrf_token %}
+        <div class="modal-body">
+            <!--  -->
+            <div class="row row-cols-lg-2 align-items-stretch g-4 ">
+                <div class="col">
+                    <div class="form-label">
+                        <label for="members_plan_name" class="form-control-plaintext col-md-3">Name<span
+                                class="text-danger">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" required id="members_plan_name" name="members_plan_name" value="{{data.name}}" placeholder="Name">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="form-label">
+                        <label for="profile_count" class="form-control-plaintext col-md-3">Credits<span
+                                class="text-danger">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" required id="profile_count" name="profile_count" value="{{data.credit}}" placeholder="Credits">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="form-label">
+                        <label for="days_count" class="form-control-plaintext col-md-3">Plan Validity<span
+                                class="text-danger">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" required id="days_count" name="days_count" value="{{data.valdity}}" placeholder="Plan Validity">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="form-label">
+                        <label for="offer_price" class="form-control-plaintext col-md-3">Original Price<span
+                                class="text-danger">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" required id="offer_price" name="offer_price" value="{{data.price}}" placeholder="Original Price">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="form-label">
+                        <label for="is_service_tax" class="form-control-plaintext col-md-3">Service Tax
+                            Include</label>
+                        <div class="form-check form-check-inline">
+                            <div class="radio">
+                                <label class="form-check-label"><input class="form-check-input" type="radio"
+                                        name="is_service_tax" id="tax_yes" value="Yes">Yes</label>
+                            </div>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <div class="radio">
+                                <label class="form-check-label"><input class="form-check-input" type="radio"
+                                        name="is_service_tax" id="tax_no" value="No">No</label>
+                            </div>
+                        </div>
+                        <script>
+                            var gen = '{{ data.tax }}'
+                            if (gen == 'Yes') {
+                                document.getElementById('tax_yes').checked = true
+                            } else {
+                                document.getElementById('tax_no').checked = true
+                            }
+                        </script>                        
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-label">
+                        <label for="plan_amount" class="form-control-plaintext col-md-3">Offer Price<span
+                                class="text-danger">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" required id="plan_amount" name="plan_amount" value="{{data.offer}}" placeholder="Offer Price">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="form-label">
+                        <label for="plan_color" class="form-control-plaintext col-md-3">Colour<span
+                                class="text-danger">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="color" class="form-range" required id="plan_color" name="plan_color" value="{{data.color}}" placeholder="Colour">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="form-label">
+                        <label for="plan_amount" class="form-control-plaintext col-md-3">Order<span
+                                class="text-danger">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" required id="plan_order" name="plan_order" value="{{data.order}}" placeholder="Order">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="form-label">
+                        <label for="is_printed_view" class="form-control-plaintext col-md-3">Printed
+                            View</label>
+                        <div class="form-check form-check-inline">
+                            <div class="radio">
+                                <label class="form-check-label"><input type="radio" class="form-check-input"
+                                        name="is_printed_view" id="print_yes" value="Yes">Yes</label>
+                            </div>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <div class="radio">
+                                <label class="form-check-label"><input class="form-check-input" type="radio"
+                                        name="is_printed_view" id="print_no" value="No">No</label>
+                            </div>
+                        </div>
+                        <script>
+                            var gen = '{{ data.printedView }}'
+                            if (gen == 'Yes') {
+                                document.getElementById('print_yes').checked = true
+                            } else {
+                                document.getElementById('print_no').checked = true
+                            }
+                        </script>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="form-label">
+                        <label for="is_messageing" class="form-control-plaintext col-md-3">Personalized
+                            Message</label>
+                        <div class="form-check form-check-inline">
+                            <div class="radio">
+                                <label class="form-check-label"><input class="form-check-input" type="radio"
+                                        name="is_messageing" id="msg_yes" value="Yes">Yes</label>
+                            </div>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <div class="radio">
+                                <label class="form-check-label"><input class="form-check-input" type="radio"
+                                        name="is_messageing" id="msg_no" value="No">No</label>
+                            </div>
+                        </div>
+                        <script>
+                            var gen = '{{ data.message }}'
+                            if (gen == 'Yes') {
+                                document.getElementById('msg_yes').checked = true
+                            } else {
+                                document.getElementById('msg_no').checked = true
+                            }
+                        </script>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-label col-2">
+                <input type="submit" value="Update Plan" class="btn btn-success form-control">
+            </div>
+        </div>
+    </form>
+    <!--  -->
+</div>
+<!--  -->
+{% endblock %}

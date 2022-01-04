@@ -1,0 +1,28 @@
+{% extends 'indexstaff.html' %} {%load static%} {% block content %}
+<!--  -->
+<div class="container-fluid px-5 py-2" id="happystories">
+    <h2 class="pb-2 border-bottom">HAPPY STORIES</h2>
+
+    <div class="container-sm" id="happy_stories">
+        <form action="{% url 'addstories' %}" method="POST" enctype="multipart/form-data" class="col-md-8">
+            {% csrf_token %}
+            <div class="form-label">
+                <label for="profilepic" class="form-label">Upload Profile Picture</label>
+                <input type="file" name="propic" class="form-control">
+            </div>
+            <div class="form-label">
+                <input type="text" name="name" class="form-control" placeholder="Image Name">
+            </div>
+            <div class="form-label">
+                <label for="" class="form-control-plaintext">Captions</label>
+                <textarea name="caption" cols="50" rows="8" class="form-control" placeholder="Enter the captions here "></textarea>
+            </div>
+            <div class="form-label">
+                <input type="submit" value="SUBMIT" class="btn btn-success form-control">
+            </div>
+        </form>
+    </div>
+
+</div>
+<!--  -->
+{% endblock %}

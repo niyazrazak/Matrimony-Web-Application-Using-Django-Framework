@@ -1,0 +1,52 @@
+{% extends 'user_dash.html' %} {% load static %} {% block content %}
+<!--  -->
+<div class="container px-5 py-2" id="plan">
+    <h2 class="pb-2 border-bottom">PACKAGES</h2>
+
+    <div class="row row-cols-sm-1 row-cols-lg-3 align-items-stretch g-4 py-2">
+        <!--  -->
+        {% for i in plan %}
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <ul class="nav list-group flex-column">
+                <li class="list-group-item text-center" style="background-color: {{i.color}}; color: #000000;" aria-current="true"><strong class="fs-4">{{i.name}}</strong></li>
+                {% if i.name == 'FREE' %} {% else %}
+                <li class="list-group-item text-center">
+                    <h4 class="text-danger">₹ {{i.offer}}</h4>
+                    <h6 class="text-danger text-decoration-line-through">₹ {{i.price}}</h6>
+                </li>
+                {% endif %}
+                <li class="list-group-item text-center">
+                    <h5 class="text-info">Allowed Profiles - {{i.credit}}</h5>
+                </li>
+                <li class="list-group-item text-center">
+                    <h5 class="text-info">Duration - {{i.valdity}} Days</h5>
+                </li>
+                {% if i.printedView == 'Yes' %}
+                <li class="list-group-item text-center">
+                    <h5 class="text-success">Profile Print</h5>
+                </li>
+                {% endif %} {% if i.message == 'Yes' %}
+                <li class="list-group-item text-center">
+                    <h5 class="text-success">Messaging</h5>
+                </li>
+                {% endif %} {% if i.name == 'FREE' %} {% else %}
+                <li class="list-group-item text-center">
+                    <select name="payment_mode" id="payment_mode" class="form-select" required="required" tabindex="-1" aria-hidden="true">
+                        <option value="net_banking">Net Banking / Card Payment</option>
+                        <option value="bank_tranfer">Bank Transfer</option>
+                    </select>
+                </li>
+                <li class="list-group-item text-center">
+                    <input type="submit" name="package_submit" class="btn btn-primary" value="Upgrade Now">
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+    <!--  -->
+</div>
+
+<!--  -->
+
+{% endblock %}

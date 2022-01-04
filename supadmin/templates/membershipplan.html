@@ -1,0 +1,63 @@
+{% extends 'indexadmin.html' %} {%load static%} {% block content %}
+<div class="container-fluid px-5 py-3" id="plans">
+    <h2 class="pb-2 border-bottom">MEMBERSHIP PLANS LIST</h2>
+
+    <div class="table-responsive table-success">
+        <div class="text-end">
+            <a href="{% url 'newplan' %}" class="btn btn-sm btn-outline-primary">
+                <li class="fas fa-plus-square"></li> ADD NEW PLAN
+            </a>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="text-center" scope="col">ID</th>
+                    <th class="text-center" scope="col">NAME</th>
+                    <th class="text-center" scope="col">CREDIT</th>
+                    <th class="text-center" scope="col">PLAN VALDITY</th>
+                    <th class="text-center" scope="col">PLAN CHARGES</th>
+                    <th class="text-center" scope="col">OFFER PRICE</th>
+                    <th class="text-center" scope="col">ORDER</th>
+                    <th class="text-center" scope="col">COLOR</th>
+                    <th class="text-center" scope="col">MESSAGING</th>
+                    <th class="text-center" scope="col">SERVICE TAX</th>
+                    <th class="text-center" scope="col">ACTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in plan %}
+                <tr>
+                    <td class="text-center">{{ forloop.counter }}</td>
+                    <td class="text-center">{{i.name}}</td>
+                    <td class="text-center">{{i.credit}}</td>
+                    <td class="text-center">{{i.valdity}} DAYS</td>
+                    <td class="text-center">Rs {{i.price}}</td>
+                    <td class="text-center">Rs {{i.offer}} </td>
+                    <td class="text-center">{{i.order}}</td>
+                    <td class="text-center" id="color">
+                        <i class="fas fa-square" style="color:{{i.color}};"></i>
+                    </td>
+                    <td class="text-center">
+                        {% if i.message == 'Yes' %}✅{% else %}❌{% endif %}
+                    </td>
+                    <td class="text-center">
+                        {% if i.tax == 'Yes' %}✅{% else %}❌{% endif %}
+                    </td>
+                    <td class="text-center">
+                        <a href="{% url 'editplan' pid=i.id %}" class="text-success"><i class="fas fa-edit"></i></a><br>
+                        <a href="{% url 'deleteplan' pid=i.id %}" class="text-danger"><i
+                                class="fas fa-trash-alt"></i></a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% if messages %} {% for message in messages %}
+        <small class='fw-bold'>{{message}}</small> {% endfor %} {% endif %}
+    </div>
+</div>
+
+
+
+
+{% endblock %}

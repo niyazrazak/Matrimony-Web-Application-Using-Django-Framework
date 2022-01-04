@@ -1,0 +1,61 @@
+{% extends 'premiumprofiles.html' %}
+{%load static%}
+{% block premiumuser %}
+<!--  -->
+<h5 class="pb-2 border-bottom">GOLD USER</h5>
+
+<div class="table-responsive">
+    <table class="table table-striped table-sm table-hover">
+        <thead>
+            <tr class="border border-2 border-primary bg-opacity-50 bg-secondary">
+                <th class="text-center">ID</th>
+                <th class="text-center">USER ID</th>
+                <th class="text-center">USER NAME</th>
+                <th class="text-center">PRIMARY NUMBER</th>
+                <th class="text-center">GENDER</th>
+                <th class="text-center">AGE</th>
+                <th class="text-center">CITY</th>
+                <th class="text-center">CREDIT LEFT</th>
+                <th class="text-center">STATUS</th>
+                <th class="text-center">DATE OF SUBSCRIPTION</th>
+                <th class="text-center">EXPIRE IN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-center">1</td>
+                <td class="text-center"><a href="http://" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none">GM124</a></td>
+                <td class="text-center">IJAZ KARI</td>
+                <td class="text-center">9996437527</td>
+                <td class="text-center text-primary"><i class="fas fa-mars"></i></td>
+                <td class="text-center">28</td>
+                <td class="text-center">CALICUT</td>
+                <td class="text-center">25</td>
+                <td class="text-center">
+                    <div class="badge bg-success">ACTIVE</div>
+                </td>
+                <td class="text-center">28-12-2021</td>
+                <td class="text-center">45 DAYS</td>
+            </tr>
+            <tr>
+                <td class="text-center">2</td>
+                <td class="text-center"><a href="http://" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none">GM124</a></td>
+                <td class="text-center">AMALA MOHAN</td>
+                <td class="text-center">9996437527</td>
+                <td class="text-center text-danger"><i class="fas fa-venus"></i></td>
+                <td class="text-center">28</td>
+                <td class="text-center">CALICUT</td>
+                <td class="text-center">25</td>
+                <td class="text-center">
+                    <div class="badge bg-warning">INACTIVE</div>
+                </td>
+                <td class="text-center">28-12-2021</td>
+                <td class="text-center">45 DAYS</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--  -->
+{% endblock %}

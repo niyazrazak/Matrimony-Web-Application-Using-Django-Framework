@@ -1,0 +1,81 @@
+body {
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #297fb94d;
+  background-repeat: no-repeat;
+  font-family: "Sanchez", serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #162b32;
+}
+
+/*  Desktop*/
+
+/* Message BAr */
+
+.message-section {
+  background: #fff;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+}
+
+.settings-tray {
+  background: #eee;
+}
+.chat-bubble {
+  padding: 10px 14px;
+  background: #eee;
+  margin: 10px 30px;
+  border-radius: 9px;
+  position: relative;
+  animation: fadeIn 1s ease-in;
+}
+.chat-bubble-left {
+  left: 0;
+  border-right-color: #eee;
+  border-left: 0;
+  margin-left: 0px;
+}
+
+.chat-bubble-right {
+  right: 0;
+  border-left-color: #eee;
+  border-right: 0;
+  margin-right: -20px;
+}
+
+.chat-box-tray {
+  background: #eee;
+  display: flex;
+  align-items: baseline;
+  padding: 10px 15px;
+  align-items: center;
+  margin-top: 19px;
+  bottom: 0;
+}
+/* Maintaince */
+.error-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.error-actions {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.error-actions .btn {
+  margin-right: 10px;
+}
+.message-box h1 {
+  color: #252932;
+  font-size: 98px;
+  font-weight: 700;
+  line-height: 98px;
+  text-shadow: rgba(61, 61, 61, 0.3) 1px 1px, rgba(61, 61, 61, 0.2) 2px 2px,
+    rgba(61, 61, 61, 0.3) 3px 3px;
+}

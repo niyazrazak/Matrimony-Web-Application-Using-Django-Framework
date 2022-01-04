@@ -1,0 +1,305 @@
+{% extends 'indexadmin.html' %}
+{%load static%}
+{% block content %}
+
+<div class="container-fluid px-5 py-3" id="homeadmin">
+    <h2 class="pb-2 border-bottom">USERS</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#009432;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">TOTAL USERS</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">702</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background: #EA2027;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">PREMIUM USERS</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">20</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#ff5e57;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">MALE USERS</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">303</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#1B1464;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">FEMALE USERS</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">399</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- User end -->
+    <h2 class="pb-2 border-bottom">RECENT ADDED USERS</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#cd84f1;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">TODAY</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">21</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#b71540;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">THIS MONTH</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">98</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#ffa502;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">THIS YEAR</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">922</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Paid Members -->
+    <h2 class="pb-2 border-bottom">ORDERS REPORTS</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#ff6b81;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">TOTAL</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">29</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#0fb9b1;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">PAID MEMBERS</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">20</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#4b7bec;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">UNPAID MEMBERS</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">9</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Religion Report -->
+    <h2 class="pb-2 border-bottom">REPORT BY RELIGION</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#fa8231;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">HINDU</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">129</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#20bf6b;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">ISLAM</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">120</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#718093;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">CHRISTAIN</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">209</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reports By Subscription -->
+    <h2 class="pb-2 border-bottom">REPORTS BY SUBSCRIPTION</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#009432;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">FREE</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">702</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#C0C0C0;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">SILVER</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">120</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#DAA520;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">GOLD</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">23</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg"
+                style="background:#e0115f;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="display-6 lh-1 fw-bold">DIAMOND</h2>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="{%static 'images/info.png'%}" alt="info" width="32" height="32" class="img-fluid">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <h1 class="display-6 lh-1 fw-bold">9</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

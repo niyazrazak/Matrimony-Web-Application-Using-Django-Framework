@@ -1,0 +1,141 @@
+{% extends 'user_dash.html' %}
+{% load static %}
+{% block content %}
+<!--https://codepen.io/FilipRastovic/pen/pXgqKK-->
+
+<!--  -->
+<div class="container p-2" id="messagesuser">
+
+    <!--  -->
+    <div class="message-section container">
+        <div class="row p-0">
+            <div class="col-4 border-end border-1 border-info">
+                <div class="settings-tray d-flex">
+                    <div class="input-group-sm text-start">
+                        <i class="fas fa-search"></i>
+                        <input placeholder="Search here" type="text" class="form-control-sm">
+                    </div>
+                    <div class="d-flex">
+                        <i class="fas fa-sync p-2"></i>
+                        <i class="far fa-envelope p-2"></i>
+                        <i class="text-end fas fa-bars p-2"></i>
+                    </div>
+                </div>
+                <div class="pt-3 d-flex align-items-baseline border-bottom border-3 friend-drawer--onhover">
+                    <img class="profile-image"
+                        src="https://assets.popbuzz.com/2018/19/13-reasons-why-clay-jensen-6-1526390008-view-0.jpg"
+                        alt="">
+                    <div class="fw-bolder">
+                        <h6 class="fw-bold">Clay Robson</h6>
+                        <p class="text-muted">Hey, Are You Interest?</p>
+                    </div>
+                    <span class="text-muted small">13:21</span>
+                </div>
+
+                <div class="pt-3 d-flex align-items-baseline border-bottom border-3 friend-drawer--onhover">
+                    <img class="profile-image"
+                        src="https://assets.popbuzz.com/2018/19/13-reasons-why-clay-jensen-6-1526390008-view-0.jpg"
+                        alt="">
+                    <div class="fw-bolder">
+                        <h6 class="fw-bold">Clay Robson</h6>
+                        <p class="text-muted">Hey, Are You Interest?</p>
+                    </div>
+                    <span class="text-muted small">13:21</span>
+                </div>
+                <div class="pt-3 d-flex align-items-baseline border-bottom border-3 friend-drawer--onhover">
+                    <img class="profile-image"
+                        src="https://assets.popbuzz.com/2018/19/13-reasons-why-clay-jensen-6-1526390008-view-0.jpg"
+                        alt="">
+                    <div class="fw-bolder">
+                        <h6 class="fw-bold">Clay Robson</h6>
+                        <p class="text-muted">Hey, Are You Interest?</p>
+                    </div>
+                    <span class="text-muted small">13:21</span>
+                </div>
+            </div>
+            <!-- Message content -->
+            <div class="col-8">
+                <div class="settings-tray d-flex">
+                    <div class="pt-3 px-3 d-inline-flex">
+                        <img class="profile-image"
+                            src="https://assets.popbuzz.com/2018/19/13-reasons-why-clay-jensen-6-1526390008-view-0.jpg"
+                            alt="">
+                        <div class="text-center">
+                            <h6 class="fw-bold">Robo Cop</h6>
+                            <p class="px-4 text-muted">Active 55 min ago</p>
+                        </div>
+                    </div>
+                    <!-- <span class="text-end">
+                        <i class="fas fa-sync p-2"></i>
+                        <i class="far fa-envelope p-2"></i>
+                        <i class="text-end fas fa-bars p-2"></i>
+                    </span> -->
+                </div>
+                <div class="chat-panel">
+                    <div class="row p-0">
+                        <div class="col-md-3">
+                            <div class="chat-bubble chat-bubble-left">
+                                Hello Hanna!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-md-3 offset-md-9">
+                            <div class="chat-bubble chat-bubble-right">
+                                Hello Clay!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-0">
+                        <div class="col-md-3 offset-md-9">
+                            <div class="chat-bubble chat-bubble-right">
+                                ?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-0">
+                        <div class="col-md-3">
+                            <div class="chat-bubble chat-bubble-left">
+                                I'm Clay
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <div class="chat-bubble chat-bubble-left">
+                                I'm Interest in Your Profile?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <div class="chat-bubble chat-bubble-left">
+                                Hey, Are You Interest?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-md-3 offset-md-9">
+                            <div class="chat-bubble chat-bubble-right">
+                                No
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="chat-box-tray w-100">
+                                <i class="fas fa-smile text-start w-25"></i>
+                                <input type="text" placeholder="Type your message here..." class="text-center w-75">
+                                <i class="fas fa-arrow-alt-circle-right text-center w-25"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+</div>
+
+<!--  -->
+{% endblock %}
